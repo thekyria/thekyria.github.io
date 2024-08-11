@@ -29,6 +29,5 @@ jobs:
         with:
           files: |
             rendercv_output/*_CV.pdf
-            rendercv_output/*_CV.tex
           generate_release_notes: true
           make_latest: true

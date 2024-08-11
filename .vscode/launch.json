@@ -12,10 +12,11 @@
       "args": [
         "render",
         "src/thekyria_CV.yaml",
+        "--dont-generate-markdown",
+        "--dont-generate-html",
+        "--dont-generate-png",
         "--pdf-path",
-        "thekyria_CV.pdf",
-        "--markdown-path",
-        "thekyria_CV.md"
+        "build/thekyria_CV.pdf"
       ]
     }
   ]

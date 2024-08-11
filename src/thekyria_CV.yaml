@@ -1,32 +1,15 @@
 cv:
-  name: John Doe
-  location: Your Location
-  email: youremail@yourdomain.com
-  phone: tel:+90-541-999-99-99
-  website: https://yourwebsite.com/
+  name: Theodoros Kyriakidis
+  location: Thessaloniki, GR | Lucerne, CH
+  email: thekyria@gmail.com 
+  phone: tel:+30-6978175508
+  website: http://thekyria.com/
   social_networks:
     - network: LinkedIn
-      username: yourusername
+      username: theodoroskyriakidis
     - network: GitHub
-      username: yourusername
+      username: thekyria
   sections:
-    welcome_to_RenderCV!:
-      - '[RenderCV](https://github.com/sinaatalay/rendercv) is
-        a LaTeX-based CV/resume framework. It allows you to create
-        a high-quality CV or resume as a PDF file from a YAML
-        file, with **full Markdown syntax support** and **complete
-        control over the LaTeX code**.'
-      - The boilerplate content was inspired by [Gayle McDowell](https://github.com/dnl-blkv/mcdowell-cv).
-    quick_guide:
-      - bullet: Each section title is arbitrary and each section
-          contains a list of entries.
-      - bullet: 'There are 7 unique entry types: *BulletEntry*,
-          *TextEntry*, *EducationEntry*, *ExperienceEntry*, *NormalEntry*,
-          *PublicationEntry*, and *OneLineEntry*.'
-      - bullet: Select a section title, pick an entry type, and
-          start writing your section!
-      - bullet: '[Here](https://docs.rendercv.com/user_guide/),
-          you can find a comprehensive user guide for RenderCV.'
     education:
       - institution: University of Pennsylvania
         area: Computer Science
