@@ -11,9 +11,9 @@
       "module": "rendercv",
       "args": [
         "render",
-        "src/John_Doe_CV.yaml",
+        "src/thekyria_CV.yaml",
         "--pdf-path",
-        "John_Doe_CV.pdf",
+        "thekyria_CV.pdf",
         "--markdown-path",
         "README.md"
       ]
