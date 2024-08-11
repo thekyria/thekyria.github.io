@@ -15,7 +15,7 @@
         "--pdf-path",
         "thekyria_CV.pdf",
         "--markdown-path",
-        "README.md"
+        "thekyria_CV.md"
       ]
     }
   ]
