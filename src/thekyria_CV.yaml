@@ -9,93 +9,76 @@ cv:
       username: theodoroskyriakidis
     - network: GitHub
       username: thekyria
+    - network: StackOverflow
+      username: 10955074/thekyria
+    - network: Google Scholar
+      username: k05LbAMAAAAJ
   sections:
-    education:
-      - institution: University of Pennsylvania
-        area: Computer Science
-        degree: BS
-        start_date: 2000-09
-        end_date: 2005-05
-        highlights:
-          - 'GPA: 3.9/4.0 ([Transcript](https://example.com))'
-          - '**Coursework:** Computer Architecture, Comparison
-            of Learning Algorithms, Computational Theory'
     experience:
-      - company: Apple
-        position: Software Engineer
-        location: Cupertino, CA
-        start_date: 2005-06
-        end_date: 2007-08
+      - company: GWF
+        position: Head of Embedded Software and QA
+        location: Thessaloniki, GR | Lucerne, CH
+        start_date: 2020-08
+        end_date: present
         highlights:
-          - Reduced time to render user buddy lists by 75% by
-            implementing a prediction algorithm
-          - Integrated iChat with Spotlight Search by creating
-            a tool to extract metadata from saved chat transcripts
-            and provide metadata to a system-wide search database
-          - Redesigned chat file format and implemented backward
-            compatibility for search
-      - company: Microsoft
-        position: Software Engineer Intern
-        location: Redmond, WA
-        start_date: 2003-06
-        end_date: 2003-08
+          - Contributed to steady double-digit growth for the last 4 years, by leading an international team of 20+ Engineers across 3 sites.
+          - Launched flagship Products [Sonico Edge](https://productfinder.gwf.ch/en/sonico-edge-2) and [Sonico Nano](https://productfinder.gwf.ch/en/sonico-nano).
+          - Bootstrapped a separate Development Testing team to improve Quality across product lines.
+          - Created an Embedded Development and QA [Department](https://maps.app.goo.gl/DnQaTXWKxJURBjJr5) in Thessaloniki, Greece.
+      - company: Cisco
+        position: Test Engineer
+        location: Lausanne, CH
+        start_date: 2017-01
+        end_date: 2020-08
         highlights:
-          - Designed a UI for the VS open file switcher (Ctrl-Tab)
-            and extended it to tool windows
-          - Created a service to provide gradient across VS and
-            VS add-ins, optimizing its performance via caching
-          - Built an app to compute the similarity of all methods
-            in a codebase, reducing the time from $\mathcal{O}(n^2)$
-            to $\mathcal{O}(n \log n)$
-          - Created a test case generation tool that creates random
-            XML docs from XML Schema
-          - Automated the extraction and processing of large datasets
-            from legacy systems using SQL and Perl scripts
-    publications:
-      - title: 3D Finite Element Analysis of No-Insulation Coils
-        authors:
-          - Frodo Baggins
-          - '***John Doe***'
-          - Samwise Gamgee
-        doi: 10.1109/TASC.2023.3340648
-        date: 2004-01
-    projects:
-      - name: Multi-User Drawing Tool
-        date: '[github.com/name/repo](https://github.com/sinaatalay/rendercv)'
+          - In the team that launched [Catalyst 9300 Series Switch](https://www.cisco.com/site/us/en/products/networking/wireless/wireless-lan-controllers/catalyst-9800-series/index.html), [Catalyst 9800 Series Wireless Controller](https://www.cisco.com/site/us/en/products/networking/switches/catalyst-9300-series-switches/index.html), [Embedded Wireless Controller](https://www.cisco.com/site/us/en/products/networking/wireless/access-points/catalyst-9100-series/index.html)
+          - Led automated multi-phase testing, CI QA, pre-commit sanities, feature testing, regression.
+          - Deep understanding of wireless/non-wireless deployment, configuration, troubleshooting; 3rd level support for key customers.
+    education:
+      - institution: EPFL
+        area: Electrical Engineering
+        degree: PhD
+        start_date: 2010
+        end_date: 2015
         highlights:
-          - Developed an electronic classroom where multiple users
-            can simultaneously view and draw on a "chalkboard"
-            with each person's edits synchronized
-          - 'Tools Used: C++, MFC'
-      - name: Synchronized Desktop Calendar
-        date: '[github.com/name/repo](https://github.com/sinaatalay/rendercv)'
+          - '[Explored](https://infoscience.epfl.ch/entities/person/6781c7bb-13b0-4a5b-a9d5-6de6ee115357) linear algebra capabilities of analog electronic computing machines.'
+          - Combined analog and digital resources (fixed and synthesized) into computational accelerator architectures for modern power systems and the smart grid.
+          - IEEE EPFL Student branch
+          - Fellowship by the SNSF
+      - institution: Aristotle University of Thessaloniki (AUTh)
+        area: Electrical Engineering
+        degree: MSc
+        start_date: 2004
+        end_date: 2010
         highlights:
-          - Developed a desktop calendar with globally shared
-            and synchronized calendars, allowing users to schedule
-            meetings with other users
-          - 'Tools Used: C#, .NET, SQL, XML'
-      - name: Custom Operating System
-        date: 2002
-        highlights:
-          - Built a UNIX-style OS with a scheduler, file system,
-            text editor, and calculator
-          - 'Tools Used: C'
-    technologies:
+          - Specialization in Electronics and Computer Science
+          - '[Thesis](https://ikee.lib.auth.gr/record/290616?ln=en): GyroScanField - Electromagnetic Field Measuring Instrument with Real-Time Visualization'
+          - Multiple scholarships by the National Scholarship Foundation (IKY)
+    Skills and Qualifications:
+      - label: Management
+        details: Leadership, Organizational Development, Change Management, Project Management
+      - label: Programming and Development
+        details: Programming (C++, C, Python), Embedded Systems, Release Management
+      - label: Technology
+        details: Water Industry, (Wireless) Network Engineering, Power Systems & Smart Grid, Numerical Analysis & Simulations
+      - label: Quality Assurance
+        details: DevOps, DevOps, HIL testing, CI/C(D), automated functional and non-functional testing, static & dynamic analysis, pipelines
       - label: Languages
-        details: C++, C, Java, Objective-C, C#, SQL, JavaScript
-      - label: Technologies
-        details: .NET, Microsoft SQL Server, XCode, Interface
-          Builder
+        details: Greek (native), English (prof.), French (prof.), German (bas.), Italian (bas.), Spanish (bas.)
+      - label: Memberships
+        details: PMI, ACM, IEEE (incl. Smart Grid Technical Community, Power & Energy Society), Technical Chamber of Greece
+      - label: Extra-curricular
+        details: Sports (football, basketball, running), Music (piano, greek, vocal), Literature, Motorboats, Sailing, Wine
 design:
-  theme: classic
-  font: Source Sans 3
+  theme: engineeringresumes
+  font: Latin Modern Serif
   font_size: 10pt
-  page_size: letterpaper
+  page_size: a4paper
   color: '#004f90'
   disable_external_link_icons: false
-  disable_page_numbering: false
+  disable_page_numbering: true
   page_numbering_style: NAME - Page PAGE_NUMBER of TOTAL_PAGES
-  disable_last_updated_date: false
+  disable_last_updated_date: true
   last_updated_date_style: Last updated in TODAY
   header_font_size: 30 pt
   text_alignment: justified
@@ -103,10 +86,10 @@ design:
   use_icons_for_connections: true
   margins:
     page:
-      top: 2 cm
-      bottom: 2 cm
-      left: 2 cm
-      right: 2 cm
+      top: 2.5 cm
+      bottom: 2.5 cm
+      left: 2.5 cm
+      right: 2.5 cm
     section_title:
       top: 0.3 cm
       bottom: 0.2 cm
@@ -114,7 +97,6 @@ design:
       left_and_right: 0.2 cm
       vertical_between: 0.2 cm
       date_and_location_width: 4.5 cm
-      education_degree_width: 1 cm
     highlights_area:
       top: 0.10 cm
       left: 0.4 cm
@@ -123,5 +105,3 @@ design:
       vertical_between_name_and_connections: 0.3 cm
       bottom: 0.3 cm
       horizontal_between_connections: 0.5 cm
-  show_timespan_in:
-    - Experience
