@@ -47,3 +47,12 @@ Cleanup artifacts.
 ```bash
 rm -rf rendercv_output build/thekyria_CV.pdf
 ```
+
+## Using the github actions for a release
+
+The release pipeline triggers upon pushing a tag.
+
+```bash
+git tag v2026.04.30
+git push origin --tags
+```
