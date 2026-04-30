@@ -9,8 +9,6 @@ cv:
       username: theodoroskyriakidis
     - network: GitHub
       username: thekyria
-    - network: StackOverflow
-      username: 10955074/thekyria
     - network: Google Scholar
       username: k05LbAMAAAAJ
   sections:
@@ -21,7 +19,7 @@ cv:
         start_date: 2020-08
         end_date: present
         highlights:
-          - Contributed to steady double-digit growth for the last 4 years, by leading an international team of 20+ Engineers across 3 sites.
+          - Contributed to steady double-digit growth for the last 5 years, by leading an international team of 20+ Engineers across 3 sites.
           - Launched flagship Products [Sonico Edge](https://productfinder.gwf.ch/en/sonico-edge-2) and [Sonico Nano](https://productfinder.gwf.ch/en/sonico-nano).
           - Bootstrapped a separate Development Testing team to improve Quality across product lines.
           - Created an Embedded Development and QA [Department](https://maps.app.goo.gl/DnQaTXWKxJURBjJr5) in Thessaloniki, Greece.
@@ -58,50 +56,82 @@ cv:
       - label: Management
         details: Leadership, Organizational Development, Change Management, Project Management
       - label: Programming and Development
-        details: Programming (C++, C, Python), Embedded Systems, Release Management
+        details: Programming (Python, C, C++), Embedded Systems, Release Management
       - label: Technology
         details: Water Industry, (Wireless) Network Engineering, Power Systems & Smart Grid, Numerical Analysis & Simulations
       - label: Quality Assurance
-        details: DevOps, DevOps, HIL testing, CI/C(D), automated functional and non-functional testing, static & dynamic analysis, pipelines
+        details: DevOps, HIL testing, CI/C(D), automated functional and non-functional testing, static & dynamic analysis, pipelines
       - label: Languages
         details: Greek (native), English (prof.), French (prof.), German (bas.), Italian (bas.), Spanish (bas.)
       - label: Memberships
-        details: PMI, ACM, IEEE (incl. Smart Grid Technical Community, Power & Energy Society), Technical Chamber of Greece
+        details: ACM, IEEE (incl. Smart Grid Technical Community, Power & Energy Society), PMI, Technical Chamber of Greece
       - label: Extra-curricular
-        details: Sports (football, basketball, running), Music (piano, greek, vocal), Literature, Motorboats, Sailing, Wine
+        details: Sports (football, basketball, running), Music (piano, greek, vocal), Literature, Motorboats, Sailing, Wine (WSET Level 3)
 design:
   theme: engineeringresumes
-  font: Latin Modern Serif
-  font_size: 10pt
-  page_size: a4paper
-  color: '#004f90'
-  disable_external_link_icons: false
-  disable_page_numbering: true
-  page_numbering_style: NAME - Page PAGE_NUMBER of TOTAL_PAGES
-  disable_last_updated_date: true
-  last_updated_date_style: Last updated in TODAY
-  header_font_size: 30 pt
-  text_alignment: justified
-  seperator_between_connections: ''
-  use_icons_for_connections: true
-  margins:
-    page:
-      top: 2.5 cm
-      bottom: 2.5 cm
-      left: 2.5 cm
-      right: 2.5 cm
-    section_title:
-      top: 0.3 cm
-      bottom: 0.2 cm
-    entry_area:
-      left_and_right: 0.2 cm
-      vertical_between: 0.2 cm
-      date_and_location_width: 4.5 cm
-    highlights_area:
-      top: 0.10 cm
-      left: 0.4 cm
-      vertical_between_bullet_points: 0.10 cm
-    header:
-      vertical_between_name_and_connections: 0.3 cm
-      bottom: 0.3 cm
-      horizontal_between_connections: 0.5 cm
+
+  page:
+    size: a4
+    top_margin: 2.5cm
+    bottom_margin: 2.5cm
+    left_margin: 2.5cm
+    right_margin: 2.5cm
+    show_footer: false
+    show_top_note: false
+
+  colors:
+    body: rgb(0, 0, 0)
+    name: rgb(0, 0, 0)
+    headline: rgb(0, 0, 0)
+    connections: rgb(0, 79, 144)
+    section_titles: rgb(0, 0, 0)
+    links: rgb(0, 79, 144)
+    footer: rgb(0, 0, 0)
+    top_note: rgb(0, 0, 0)
+
+  typography:
+    line_spacing: 0.6em
+    alignment: justified
+    date_and_location_column_alignment: right
+    font_family: "Latin Modern Roman"
+    font_size:
+      body: 10pt
+      name: 30pt
+      headline: 10pt
+      connections: 10pt
+      section_titles: 1.4em
+    small_caps:
+      name: false
+      headline: false
+      connections: false
+      section_titles: false
+    bold:
+      name: false
+      headline: false
+      connections: false
+      section_titles: false
+
+  links:
+    underline: false
+    show_external_link_icon: true
+
+  header:
+    alignment: center 
+    connections:
+      phone_number_format: international 
+      hyperlink: true
+      show_icons: true
+      display_urls_instead_of_usernames: false
+      separator: ''
+      space_between_connections: 0.5cm
+
+  section_titles:
+    type: with_full_line 
+    line_thickness: 0.5pt
+    space_above: 0.5cm
+    space_below: 0.3cm
+
+  sections:
+    allow_page_break: true
+    space_between_regular_entries: 1.2em
+    space_between_text_based_entries: 0.3em

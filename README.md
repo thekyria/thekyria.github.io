@@ -1,6 +1,6 @@
 # Theodoros Kyriakidis' CV
 
-This is based off <https://github.com/sinaatalay/rendercv-pipeline>.    
+This is based on <https://github.com/sinaatalay/rendercv-pipeline>.
 
 ## Usage from the CLI
 
