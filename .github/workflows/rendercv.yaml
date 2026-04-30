@@ -35,4 +35,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: RenderCV Output
-          path: rendercv_output
+          path: src/rendercv_output
