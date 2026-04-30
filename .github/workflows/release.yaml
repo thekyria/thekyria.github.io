@@ -13,7 +13,7 @@ jobs:
     name: RenderCV
     uses: ./.github/workflows/rendercv.yaml
 
-  build:
+  release:
     needs: call_rendercv_workflow
     runs-on: ubuntu-latest
     steps:
@@ -23,11 +23,11 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: RenderCV Output
-          path: rendercv_output
+          path: src/rendercv_output
       - name: Release
         uses: softprops/action-gh-release@v2
         with:
           files: |
-            rendercv_output/*_CV.pdf
+            src/rendercv_output/*_CV.pdf
           generate_release_notes: true
           make_latest: true
