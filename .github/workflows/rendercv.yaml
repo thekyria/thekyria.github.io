@@ -30,7 +30,7 @@ jobs:
             exit 1
           fi
           cd ..
-          rendercv render src/$cv_file --dont-generate-markdown --dont-generate-html --dont-generate-png --pdf-path build/${cv_file%.yaml}.pdf
+          rendercv render src/$cv_file --dont-generate-markdown --dont-generate-html --dont-generate-png --pdf-path ../build/${cv_file%.yaml}.pdf
       - name: Upload rendercv_output as an artifact
         uses: actions/upload-artifact@v4
         with:
