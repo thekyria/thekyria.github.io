@@ -3,7 +3,7 @@ name: Release a CV
 on:
   push:
     tags:
-      - "*" # Any tag pushed to the repository
+      - "v*" # Version tags, e.g. v2026.04.30
 
 permissions:
   contents: write
