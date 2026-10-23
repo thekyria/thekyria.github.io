@@ -1,0 +1,137 @@
+cv:
+  name: Theodoros Kyriakidis
+  location: Thessaloniki, GR | Lucerne, CH
+  email: thekyria@gmail.com 
+  phone: tel:+30-6978175508
+  website: http://thekyria.com/
+  social_networks:
+    - network: LinkedIn
+      username: theodoroskyriakidis
+    - network: GitHub
+      username: thekyria
+    - network: Google Scholar
+      username: k05LbAMAAAAJ
+  sections:
+    experience:
+      - company: GWF
+        position: Head of Embedded Software and QA
+        location: Thessaloniki, GR | Lucerne, CH
+        start_date: 2020-08
+        end_date: present
+        highlights:
+          - Contributed to steady double-digit growth for the last 5 years, by leading an international team of 20+ Engineers across 3 sites.
+          - Launched flagship Products [Sonico Edge](https://productfinder.gwf.ch/en/sonico-edge-2) and [Sonico Nano](https://productfinder.gwf.ch/en/sonico-nano).
+          - Bootstrapped a separate Development Testing team to improve Quality across product lines.
+          - Created an Embedded Development and QA [Department](https://maps.app.goo.gl/DnQaTXWKxJURBjJr5) in Thessaloniki, Greece.
+      - company: Cisco
+        position: Test Engineer
+        location: Lausanne, CH
+        start_date: 2017-01
+        end_date: 2020-08
+        highlights:
+          - In the team that launched [Catalyst 9300 Series Switch](https://www.cisco.com/site/us/en/products/networking/wireless/wireless-lan-controllers/catalyst-9800-series/index.html), [Catalyst 9800 Series Wireless Controller](https://www.cisco.com/site/us/en/products/networking/switches/catalyst-9300-series-switches/index.html), [Embedded Wireless Controller](https://www.cisco.com/site/us/en/products/networking/wireless/access-points/catalyst-9100-series/index.html)
+          - Led automated multi-phase testing, CI QA, pre-commit sanities, feature testing, regression.
+          - Deep understanding of wireless/non-wireless deployment, configuration, troubleshooting; 3rd level support for key customers.
+    education:
+      - institution: EPFL
+        area: Electrical Engineering
+        degree: PhD
+        start_date: 2010
+        end_date: 2015
+        highlights:
+          - '[Explored](https://infoscience.epfl.ch/entities/person/6781c7bb-13b0-4a5b-a9d5-6de6ee115357) linear algebra capabilities of analog electronic computing machines.'
+          - Combined analog and digital resources (fixed and synthesized) into computational accelerator architectures for modern power systems and the smart grid.
+          - IEEE EPFL Student branch
+          - Fellowship by the SNSF
+      - institution: Aristotle University of Thessaloniki (AUTh)
+        area: Electrical Engineering
+        degree: MSc
+        start_date: 2004
+        end_date: 2010
+        highlights:
+          - Specialization in Electronics and Computer Science
+          - '[Thesis](https://ikee.lib.auth.gr/record/290616?ln=en): GyroScanField Electromagnetic Field Measuring Instrument with Real-Time Visualization'
+          - Multiple scholarships by the National Scholarship Foundation (IKY)
+    Skills and Qualifications:
+      - label: Management
+        details: Leadership, Organizational Development, Change Management, Project Management
+      - label: Programming and Development
+        details: Programming (Python, C, C++), Embedded Systems, Release Management
+      - label: Technology
+        details: Water Industry, (Wireless) Network Engineering, Power Systems & Smart Grid, Numerical Analysis & Simulations
+      - label: Quality Assurance
+        details: DevOps, HIL testing, CI/C(D), automated functional and non-functional testing, static & dynamic analysis, pipelines
+      - label: Languages
+        details: Greek (native), English (prof.), French (prof.), German (bas.), Italian (bas.), Spanish (bas.)
+      - label: Memberships
+        details: ACM, IEEE (incl. Smart Grid Technical Community, Power & Energy Society), PMI, Technical Chamber of Greece
+      - label: Extra-curricular
+        details: Sports (football, basketball, running), Music (piano, greek, vocal), Literature, Motorboats, Sailing, Wine (WSET Level 3)
+design:
+  theme: engineeringresumes
+
+  page:
+    size: a4
+    top_margin: 2.5cm
+    bottom_margin: 2.5cm
+    left_margin: 2.5cm
+    right_margin: 2.5cm
+    show_footer: false
+    show_top_note: false
+
+  colors:
+    body: rgb(0, 0, 0)
+    name: rgb(0, 0, 0)
+    headline: rgb(0, 0, 0)
+    connections: rgb(0, 79, 144)
+    section_titles: rgb(0, 0, 0)
+    links: rgb(0, 79, 144)
+    footer: rgb(0, 0, 0)
+    top_note: rgb(0, 0, 0)
+
+  typography:
+    line_spacing: 0.6em
+    alignment: justified
+    date_and_location_column_alignment: right
+    font_family: "Latin Modern Roman"
+    font_size:
+      body: 10pt
+      name: 30pt
+      headline: 10pt
+      connections: 10pt
+      section_titles: 1.4em
+    small_caps:
+      name: false
+      headline: false
+      connections: false
+      section_titles: false
+    bold:
+      name: false
+      headline: false
+      connections: false
+      section_titles: false
+
+  links:
+    underline: false
+    show_external_link_icon: true
+
+  header:
+    alignment: center 
+    connections:
+      phone_number_format: international 
+      hyperlink: true
+      show_icons: true
+      display_urls_instead_of_usernames: false
+      separator: ''
+      space_between_connections: 0.5cm
+
+  section_titles:
+    type: with_full_line 
+    line_thickness: 0.5pt
+    space_above: 0.5cm
+    space_below: 0.3cm
+
+  sections:
+    allow_page_break: true
+    space_between_regular_entries: 1.2em
+    space_between_text_based_entries: 0.3em
