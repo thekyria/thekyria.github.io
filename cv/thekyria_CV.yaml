@@ -29,7 +29,7 @@ cv:
         start_date: 2017-01
         end_date: 2020-08
         highlights:
-          - In the team that launched [Catalyst 9300 Series Switch](https://www.cisco.com/site/us/en/products/networking/wireless/wireless-lan-controllers/catalyst-9800-series/index.html), [Catalyst 9800 Series Wireless Controller](https://www.cisco.com/site/us/en/products/networking/switches/catalyst-9300-series-switches/index.html), [Embedded Wireless Controller](https://www.cisco.com/site/us/en/products/networking/wireless/access-points/catalyst-9100-series/index.html)
+          - In the team that launched [Catalyst 9300 Series Switch](https://www.cisco.com/site/us/en/products/networking/switches/catalyst-9300-series-switches/index.html), [Catalyst 9800 Series Wireless Controller](https://www.cisco.com/site/us/en/products/networking/wireless/wireless-lan-controllers/catalyst-9800-series/index.html), [Embedded Wireless Controller](https://www.cisco.com/site/us/en/products/networking/wireless/access-points/catalyst-9100-series/index.html)
           - Led automated multi-phase testing, CI QA, pre-commit sanities, feature testing, regression.
           - Deep understanding of wireless/non-wireless deployment, configuration, troubleshooting; 3rd level support for key customers.
     education:
@@ -135,3 +135,11 @@ design:
     allow_page_break: true
     space_between_regular_entries: 1.2em
     space_between_text_based_entries: 0.3em
+
+settings:
+  render_command:
+    # Paths are relative to this file, so this writes build/thekyria_CV.pdf at repo root
+    pdf_path: ../build/thekyria_CV.pdf
+    dont_generate_markdown: true
+    dont_generate_html: true
+    dont_generate_png: true
