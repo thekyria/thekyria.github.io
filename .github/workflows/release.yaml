@@ -1,0 +1,32 @@
+name: Release a CV
+
+on:
+  push:
+    tags:
+      - "*" # Any tag pushed to the repository
+
+permissions:
+  contents: write
+
+jobs:
+  rendercv:
+    name: RenderCV
+    uses: ./.github/workflows/rendercv.yaml
+
+  release:
+    needs: rendercv
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Download CV PDF
+        uses: actions/download-artifact@v4
+        with:
+          name: cv-pdf
+          path: build
+      - name: Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: build/thekyria_CV.pdf
+          generate_release_notes: true
+          make_latest: true

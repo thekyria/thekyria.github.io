@@ -1,0 +1,28 @@
+name: Render CV
+
+on:
+  workflow_call: # reused by pages.yaml and release.yaml
+
+permissions:
+  contents: read
+
+jobs:
+  rendercv:
+    name: RenderCV
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install RenderCV
+        run: pip install -r cv/requirements.txt
+      - name: RenderCV
+        # --pdf-path is relative to the input YAML, so this writes build/thekyria_CV.pdf at repo root
+        run: rendercv render cv/thekyria_CV.yaml --dont-generate-markdown --dont-generate-html --dont-generate-png --pdf-path ../build/thekyria_CV.pdf
+      - name: Upload CV PDF as an artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: cv-pdf
+          path: build/thekyria_CV.pdf
+          if-no-files-found: error
