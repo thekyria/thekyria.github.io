@@ -11,12 +11,12 @@
       "module": "rendercv",
       "args": [
         "render",
-        "src/thekyria_CV.yaml",
+        "cv/thekyria_CV.yaml",
         "--dont-generate-markdown",
         "--dont-generate-html",
         "--dont-generate-png",
         "--pdf-path",
-        "build/thekyria_CV.pdf"
+        "../build/thekyria_CV.pdf"
       ]
     }
   ]
