@@ -1,7 +1,7 @@
 name: Render CV
 
 on:
-  workflow_call: # reused by pages.yaml and release.yaml
+  workflow_call: # reused by pages.yaml, release.yaml and pr.yaml
 
 permissions:
   contents: read
@@ -14,12 +14,12 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
-          python-version: "3.12"
+          python-version-file: .python-version
       - name: Install RenderCV
         run: pip install -r cv/requirements.txt
       - name: RenderCV
-        # --pdf-path is relative to the input YAML, so this writes build/thekyria_CV.pdf at repo root
-        run: rendercv render cv/thekyria_CV.yaml --dont-generate-markdown --dont-generate-html --dont-generate-png --pdf-path ../build/thekyria_CV.pdf
+        # Output options live under `settings:` in the YAML; this writes build/thekyria_CV.pdf
+        run: rendercv render cv/thekyria_CV.yaml
       - name: Upload CV PDF as an artifact
         uses: actions/upload-artifact@v4
         with:

@@ -9,15 +9,7 @@
       "type": "debugpy",
       "request": "launch",
       "module": "rendercv",
-      "args": [
-        "render",
-        "cv/thekyria_CV.yaml",
-        "--dont-generate-markdown",
-        "--dont-generate-html",
-        "--dont-generate-png",
-        "--pdf-path",
-        "../build/thekyria_CV.pdf"
-      ]
+      "args": ["render", "cv/thekyria_CV.yaml"]
     }
   ]
 }

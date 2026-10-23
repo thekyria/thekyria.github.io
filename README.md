@@ -44,10 +44,10 @@ Install the requirements.
 pip install -r cv/requirements.txt
 ```
 
-Render the CV. Note that `--pdf-path` is relative to the YAML file, so this writes `build/thekyria_CV.pdf` at the repo root.
+Render the CV. The output options are set under `settings:` in the YAML file, so this writes `build/thekyria_CV.pdf` at the repo root.
 
 ```bash
-rendercv render cv/thekyria_CV.yaml --dont-generate-markdown --dont-generate-html --dont-generate-png --pdf-path ../build/thekyria_CV.pdf
+rendercv render cv/thekyria_CV.yaml
 ```
 
 Cleanup artifacts.
