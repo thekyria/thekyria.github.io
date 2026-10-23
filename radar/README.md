@@ -2,7 +2,17 @@
 
 Based on: <https://github.com/thoughtworks/build-your-own-radar>
 
-git-bash example on windows, please adapt accordingly.
+Published at <https://thekyria.github.io/tech_radar.json> (copied into the site by `.github/workflows/pages.yaml`) and rendered by the hosted BYOR at <https://radar.thoughtworks.com/?documentId=https%3A%2F%2Fthekyria.github.io%2Ftech_radar.json>.
+
+Validate the json (also run on every PR by `.github/workflows/pr.yaml`):
+
+```bash
+python3 radar/check.py
+```
+
+## Running BYOR locally
+
+git-bash example on windows, run from within `radar/`, please adapt accordingly.
 
 ```bash
 # fetch the image - only once
