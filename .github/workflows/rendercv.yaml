@@ -11,8 +11,8 @@ jobs:
     name: RenderCV
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v6
         with:
           python-version-file: .python-version
           cache: pip
@@ -23,7 +23,7 @@ jobs:
         # Output options live under `settings:` in the YAML; this writes build/thekyria_CV.pdf
         run: rendercv render cv/thekyria_CV.yaml
       - name: Upload CV PDF as an artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: cv-pdf
           path: build/thekyria_CV.pdf
