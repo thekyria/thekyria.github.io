@@ -1,0 +1,597 @@
+[
+  {
+    "name": "svn",
+    "ring": "learn",
+    "quadrant": "tools",
+    "isNew": "FALSE",
+    "description": ""
+  },
+  {
+    "name": "git",
+    "ring": "use",
+    "quadrant": "tools",
+    "isNew": "FALSE",
+    "description": ""
+  },
+  {
+    "name": "Bazel",
+    "ring": "evaluate",
+    "quadrant": "languages & frameworks",
+    "isNew": "FALSE",
+    "description": ""
+  },
+  {
+    "name": "Cisco IOSXE",
+    "ring": "use",
+    "quadrant": "platforms",
+    "isNew": "FALSE",
+    "description": ""
+  },
+  {
+    "name": "DevOps",
+    "ring": "use",
+    "quadrant": "techniques",
+    "isNew": "FALSE",
+    "description": ""
+  },
+  {
+    "name": "ChatGPT",
+    "ring": "use",
+    "quadrant": "tools",
+    "isNew": "FALSE",
+    "description": ""
+  },
+  {
+    "name": "GitHub Copilot",
+    "ring": "use",
+    "quadrant": "tools",
+    "isNew": "FALSE",
+    "description": ""
+  },
+  {
+    "name": "Elastic",
+    "ring": "learn",
+    "quadrant": "languages & frameworks",
+    "isNew": "FALSE",
+    "description": ""
+  },
+  {
+    "name": "Discord",
+    "ring": "learn",
+    "quadrant": "tools",
+    "isNew": "FALSE",
+    "description": ""
+  },
+  {
+    "name": "Microsoft Teams",
+    "ring": "use",
+    "quadrant": "tools",
+    "isNew": "FALSE",
+    "description": ""
+  },
+  {
+    "name": "Slack",
+    "ring": "use",
+    "quadrant": "tools",
+    "isNew": "FALSE",
+    "description": ""
+  },
+  {
+    "name": "Cisco Webex Teams",
+    "ring": "use",
+    "quadrant": "tools",
+    "isNew": "FALSE",
+    "description": ""
+  },
+  {
+    "name": "Zoom",
+    "ring": "use",
+    "quadrant": "tools",
+    "isNew": "FALSE",
+    "description": ""
+  },
+  {
+    "name": "Trello",
+    "ring": "learn",
+    "quadrant": "tools",
+    "isNew": "FALSE",
+    "description": ""
+  },
+  {
+    "name": "Doxygen",
+    "ring": "use",
+    "quadrant": "languages & frameworks",
+    "isNew": "FALSE",
+    "description": ""
+  },
+  {
+    "name": "Markdown",
+    "ring": "use",
+    "quadrant": "languages & frameworks",
+    "isNew": "FALSE",
+    "description": ""
+  },
+  {
+    "name": "Confluence",
+    "ring": "use",
+    "quadrant": "tools",
+    "isNew": "FALSE",
+    "description": ""
+  },
+  {
+    "name": "Jira",
+    "ring": "use",
+    "quadrant": "tools",
+    "isNew": "FALSE",
+    "description": ""
+  },
+  {
+    "name": "CLion",
+    "ring": "use",
+    "quadrant": "tools",
+    "isNew": "FALSE",
+    "description": ""
+  },
+  {
+    "name": "Eclipse",
+    "ring": "learn",
+    "quadrant": "tools",
+    "isNew": "FALSE",
+    "description": ""
+  },
+  {
+    "name": "PyCharm",
+    "ring": "use",
+    "quadrant": "tools",
+    "isNew": "FALSE",
+    "description": ""
+  },
+  {
+    "name": "QT Creator",
+    "ring": "use",
+    "quadrant": "tools",
+    "isNew": "FALSE",
+    "description": ""
+  },
+  {
+    "name": "Visual Studio",
+    "ring": "learn",
+    "quadrant": "tools",
+    "isNew": "FALSE",
+    "description": ""
+  },
+  {
+    "name": "Visual Studio Code",
+    "ring": "use",
+    "quadrant": "tools",
+    "isNew": "FALSE",
+    "description": ""
+  },
+  {
+    "name": "Unity (C unit testing)",
+    "ring": "learn",
+    "quadrant": "languages & frameworks",
+    "isNew": "FALSE",
+    "description": ""
+  },
+  {
+    "name": "Google Test",
+    "ring": "evaluate",
+    "quadrant": "languages & frameworks",
+    "isNew": "FALSE",
+    "description": ""
+  },
+  {
+    "name": "Catch2",
+    "ring": "learn",
+    "quadrant": "languages & frameworks",
+    "isNew": "FALSE",
+    "description": ""
+  },
+  {
+    "name": "QMake",
+    "ring": "use",
+    "quadrant": "languages & frameworks",
+    "isNew": "FALSE",
+    "description": ""
+  },
+  {
+    "name": "LLVM Clang",
+    "ring": "use",
+    "quadrant": "tools",
+    "isNew": "FALSE",
+    "description": ""
+  },
+  {
+    "name": "IAR",
+    "ring": "use",
+    "quadrant": "tools",
+    "isNew": "FALSE",
+    "description": ""
+  },
+  {
+    "name": "GNU GCC",
+    "ring": "use",
+    "quadrant": "tools",
+    "isNew": "FALSE",
+    "description": ""
+  },
+  {
+    "name": "Yarn",
+    "ring": "learn",
+    "quadrant": "tools",
+    "isNew": "FALSE",
+    "description": ""
+  },
+  {
+    "name": "Ansible",
+    "ring": "use",
+    "quadrant": "tools",
+    "isNew": "FALSE",
+    "description": ""
+  },
+  {
+    "name": "Make",
+    "ring": "use",
+    "quadrant": "languages & frameworks",
+    "isNew": "FALSE",
+    "description": ""
+  },
+  {
+    "name": "CMake",
+    "ring": "use",
+    "quadrant": "languages & frameworks",
+    "isNew": "FALSE",
+    "description": ""
+  },
+  {
+    "name": "Chocolatey",
+    "ring": "use",
+    "quadrant": "tools",
+    "isNew": "FALSE",
+    "description": ""
+  },
+  {
+    "name": "pip",
+    "ring": "use",
+    "quadrant": "tools",
+    "isNew": "FALSE",
+    "description": ""
+  },
+  {
+    "name": "npm",
+    "ring": "learn",
+    "quadrant": "tools",
+    "isNew": "FALSE",
+    "description": ""
+  },
+  {
+    "name": "Qt",
+    "ring": "use",
+    "quadrant": "languages & frameworks",
+    "isNew": "FALSE",
+    "description": ""
+  },
+  {
+    "name": "Pandas",
+    "ring": "evaluate",
+    "quadrant": "languages & frameworks",
+    "isNew": "FALSE",
+    "description": ""
+  },
+  {
+    "name": "NumPy",
+    "ring": "learn",
+    "quadrant": "languages & frameworks",
+    "isNew": "FALSE",
+    "description": ""
+  },
+  {
+    "name": "FastAPI",
+    "ring": "learn",
+    "quadrant": "languages & frameworks",
+    "isNew": "FALSE",
+    "description": ""
+  },
+  {
+    "name": "Django",
+    "ring": "learn",
+    "quadrant": "languages & frameworks",
+    "isNew": "FALSE",
+    "description": ""
+  },
+  {
+    "name": "Flask",
+    "ring": "learn",
+    "quadrant": "languages & frameworks",
+    "isNew": "FALSE",
+    "description": ""
+  },  
+  {
+    "name": "Express.js",
+    "ring": "learn",
+    "quadrant": "languages & frameworks",
+    "isNew": "FALSE",
+    "description": ""
+  },
+  {
+    "name": "jQuery",
+    "ring": "learn",
+    "quadrant": "languages & frameworks",
+    "isNew": "FALSE",
+    "description": ""
+  },
+  {
+    "name": "React",
+    "ring": "learn",
+    "quadrant": "languages & frameworks",
+    "isNew": "FALSE",
+    "description": ""
+  },
+  {
+    "name": "Node.js",
+    "ring": "learn",
+    "quadrant": "languages & frameworks",
+    "isNew": "FALSE",
+    "description": ""
+  },
+  {
+    "name": "Azure DevOps",
+    "ring": "use",
+    "quadrant": "platforms",
+    "isNew": "FALSE",
+    "description": ""
+  },
+  {
+    "name": "GitLab",
+    "ring": "learn",
+    "quadrant": "platforms",
+    "isNew": "FALSE",
+    "description": ""
+  },
+  {
+    "name": "Bitbucket",
+    "ring": "use",
+    "quadrant": "platforms",
+    "isNew": "FALSE",
+    "description": ""
+  },
+  {
+    "name": "GitHub",
+    "ring": "use",
+    "quadrant": "platforms",
+    "isNew": "FALSE",
+    "description": ""
+  },
+  {
+    "name": "CodeSandbox",
+    "ring": "learn",
+    "quadrant": "platforms",
+    "isNew": "FALSE",
+    "description": ""
+  },
+  {
+    "name": "Kubernetes",
+    "ring": "learn",
+    "quadrant": "platforms",
+    "isNew": "FALSE",
+    "description": ""
+  },
+  {
+    "name": "Docker",
+    "ring": "use",
+    "quadrant": "platforms",
+    "isNew": "FALSE",
+    "description": ""
+  },
+  {
+    "name": "Linux",
+    "ring": "use",
+    "quadrant": "platforms",
+    "isNew": "FALSE",
+    "description": ""
+  },
+  {
+    "name": "Windows",
+    "ring": "use",
+    "quadrant": "platforms",
+    "isNew": "FALSE",
+    "description": ""
+  },
+  {
+    "name": "WSL",
+    "ring": "use",
+    "quadrant": "platforms",
+    "isNew": "FALSE",
+    "description": ""
+  },
+  {
+    "name": "AWS",
+    "ring": "evaluate",
+    "quadrant": "platforms",
+    "isNew": "FALSE",
+    "description": ""
+  },
+  {
+    "name": "Linode",
+    "ring": "use",
+    "quadrant": "platforms",
+    "isNew": "FALSE",
+    "description": ""
+  },
+  {
+    "name": "Vercel",
+    "ring": "use",
+    "quadrant": "platforms",
+    "isNew": "FALSE",
+    "description": ""
+  },
+  {
+    "name": "VMWare",
+    "ring": "learn",
+    "quadrant": "platforms",
+    "isNew": "FALSE",
+    "description": ""
+  },
+  {
+    "name": "Azure",
+    "ring": "use",
+    "quadrant": "platforms",
+    "isNew": "FALSE",
+    "description": ""
+  },
+  {
+    "name": "MariaDB",
+    "ring": "use",
+    "quadrant": "languages & frameworks",
+    "isNew": "FALSE",
+    "description": ""
+  },
+  {
+    "name": "PostgreSQL",
+    "ring": "use",
+    "quadrant": "languages & frameworks",
+    "isNew": "FALSE",
+    "description": ""
+  },
+  {
+    "name": "Groovy",
+    "ring": "learn",
+    "quadrant": "languages & frameworks",
+    "isNew": "FALSE",
+    "description": ""
+  },
+  {
+    "name": "Assembly (x86)",
+    "ring": "learn",
+    "quadrant": "languages & frameworks",
+    "isNew": "FALSE",
+    "description": ""
+  },
+  {
+    "name": "Assembly (ARM)",
+    "ring": "learn",
+    "quadrant": "languages & frameworks",
+    "isNew": "FALSE",
+    "description": ""
+  },
+  {
+    "name": "Rust",
+    "ring": "evaluate",
+    "quadrant": "languages & frameworks",
+    "isNew": "FALSE",
+    "description": ""
+  },
+  {
+    "name": "Perl",
+    "ring": "hold",
+    "quadrant": "languages & frameworks",
+    "isNew": "FALSE",
+    "description": ""
+  },
+  {
+    "name": "Ruby",
+    "ring": "hold",
+    "quadrant": "languages & frameworks",
+    "isNew": "FALSE",
+    "description": ""
+  },
+  {
+    "name": "Go",
+    "ring": "evaluate",
+    "quadrant": "languages & frameworks",
+    "isNew": "FALSE",
+    "description": ""
+  },
+  {
+    "name": "PowerShell",
+    "ring": "hold",
+    "quadrant": "languages & frameworks",
+    "isNew": "FALSE",
+    "description": ""
+  },
+  {
+    "name": "Windows CMD",
+    "ring": "learn",
+    "quadrant": "languages & frameworks",
+    "isNew": "FALSE",
+    "description": ""
+  },
+  {
+    "name": "bash",
+    "ring": "use",
+    "quadrant": "languages & frameworks",
+    "isNew": "FALSE",
+    "description": ""
+  },
+  {
+    "name": "SQL",
+    "ring": "use",
+    "quadrant": "languages & frameworks",
+    "isNew": "FALSE",
+    "description": ""
+  },
+  {
+    "name": "CSS",
+    "ring": "learn",
+    "quadrant": "languages & frameworks",
+    "isNew": "FALSE",
+    "description": ""
+  },
+  {
+    "name": "HTML",
+    "ring": "use",
+    "quadrant": "languages & frameworks",
+    "isNew": "FALSE",
+    "description": ""
+  },
+  {
+    "name": "Python",
+    "ring": "learn",
+    "quadrant": "languages & frameworks",
+    "isNew": "FALSE",
+    "description": ""
+  },
+  {
+    "name": "JavaScript",
+    "ring": "learn",
+    "quadrant": "languages & frameworks",
+    "isNew": "FALSE",
+    "description": ""
+  },
+  {
+    "name": "Java",
+    "ring": "learn",
+    "quadrant": "languages & frameworks",
+    "isNew": "FALSE",
+    "description": ""
+  },
+  {
+    "name": "PHP",
+    "ring": "learn",
+    "quadrant": "languages & frameworks",
+    "isNew": "FALSE",
+    "description": ""
+  },
+  {
+    "name": "MATLAB",
+    "ring": "use",
+    "quadrant": "languages & frameworks",
+    "isNew": "FALSE",
+    "description": ""
+  },
+  {
+    "name": "C++",
+    "ring": "use",
+    "quadrant": "languages & frameworks",
+    "isNew": "FALSE",
+    "description": ""
+  },
+  {
+    "name": "C",
+    "ring": "use",
+    "quadrant": "languages & frameworks",
+    "isNew": "FALSE",
+    "description": ""
+  }
+]

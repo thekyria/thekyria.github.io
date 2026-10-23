@@ -30,6 +30,9 @@ jobs:
         with:
           name: cv-pdf
           path: site
+      - name: Copy tech radar data into the site
+        # Rendered by radar.thoughtworks.com, which fetches it from the published site
+        run: cp radar/tech_radar.json site/
       - uses: actions/configure-pages@v6
       - uses: actions/upload-pages-artifact@v5
         with:
