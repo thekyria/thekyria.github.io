@@ -1,7 +1,4 @@
-
-# Welcome
-
-Under construction
+# thekyria.github.io
 
 Source of <https://thekyria.github.io>.
 

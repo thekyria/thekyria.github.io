@@ -1,9 +1,9 @@
 cv:
   name: Theodoros Kyriakidis
   location: Thessaloniki, GR | Lucerne, CH
-  email: thekyria@gmail.com 
+  email: thekyria@gmail.com
   phone: tel:+30-6978175508
-  website: http://thekyria.com/
+  website: https://thekyria.com/
   social_networks:
     - network: LinkedIn
       username: theodoroskyriakidis
@@ -20,8 +20,8 @@ cv:
         end_date: present
         highlights:
           - Contributed to steady double-digit growth for the last 5 years, by leading an international team of 20+ Engineers across 3 sites.
-          - Launched flagship Products [Sonico Edge](https://productfinder.gwf.ch/en/sonico-edge-2) and [Sonico Nano](https://productfinder.gwf.ch/en/sonico-nano).
-          - Bootstrapped a separate Development Testing team to improve Quality across product lines.
+          - Launched flagship products [Sonico Edge](https://productfinder.gwf.ch/en/sonico-edge-2) and [Sonico Nano](https://productfinder.gwf.ch/en/sonico-nano).
+          - Bootstrapped a separate Development Testing team to improve quality across product lines.
           - Created an Embedded Development and QA [Department](https://maps.app.goo.gl/DnQaTXWKxJURBjJr5) in Thessaloniki, Greece.
       - company: Cisco
         position: Test Engineer
@@ -29,7 +29,7 @@ cv:
         start_date: 2017-01
         end_date: 2020-08
         highlights:
-          - In the team that launched [Catalyst 9300 Series Switch](https://www.cisco.com/site/us/en/products/networking/switches/catalyst-9300-series-switches/index.html), [Catalyst 9800 Series Wireless Controller](https://www.cisco.com/site/us/en/products/networking/wireless/wireless-lan-controllers/catalyst-9800-series/index.html), [Embedded Wireless Controller](https://www.cisco.com/site/us/en/products/networking/wireless/access-points/catalyst-9100-series/index.html)
+          - In the team that launched [Catalyst 9300 Series Switch](https://www.cisco.com/site/us/en/products/networking/switches/catalyst-9300-series-switches/index.html), [Catalyst 9800 Series Wireless Controller](https://www.cisco.com/site/us/en/products/networking/wireless/wireless-lan-controllers/catalyst-9800-series/index.html), [Embedded Wireless Controller](https://www.cisco.com/site/us/en/products/networking/wireless/access-points/catalyst-9100-series/index.html).
           - Led automated multi-phase testing, CI QA, pre-commit sanities, feature testing, regression.
           - Deep understanding of wireless/non-wireless deployment, configuration, troubleshooting; 3rd level support for key customers.
     education:
@@ -60,7 +60,7 @@ cv:
       - label: Technology
         details: Water Industry, (Wireless) Network Engineering, Power Systems & Smart Grid, Numerical Analysis & Simulations
       - label: Quality Assurance
-        details: DevOps, HIL testing, CI/C(D), automated functional and non-functional testing, static & dynamic analysis, pipelines
+        details: DevOps, HIL testing, CI/CD, automated functional and non-functional testing, static & dynamic analysis, pipelines
       - label: Languages
         details: Greek (native), English (prof.), French (prof.), German (bas.), Italian (bas.), Spanish (bas.)
       - label: Memberships
