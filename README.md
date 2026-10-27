@@ -4,7 +4,6 @@ Source of <https://thekyria.com>.
 
 - `site/` — static site content, deployed to GitHub Pages by `.github/workflows/pages.yaml` on every push to `main`.
 - `cv/` — CV source (`thekyria_CV.yaml`), rendered to PDF with [RenderCV](https://github.com/rendercv/rendercv). The PDF is published at <https://thekyria.com/thekyria_CV.pdf>.
-
 - `radar/` — tech radar data (`tech_radar.json`) in [build-your-own-radar](https://github.com/thoughtworks/build-your-own-radar) format. Published at <https://thekyria.com/tech_radar.json> and rendered via [radar.thoughtworks.com](https://radar.thoughtworks.com/?documentId=https%3A%2F%2Fthekyria.com%2Ftech_radar.json). See `radar/README.md`. Previously its own repository, `thekyria/tech_radar`.
 
 The CV setup is based on <https://github.com/sinaatalay/rendercv-pipeline> (see `cv/LICENSE`) and was previously its own repository, `thekyria/rendercv-pipeline`.
