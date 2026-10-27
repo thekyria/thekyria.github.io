@@ -8,6 +8,27 @@ Source of <https://thekyria.com>.
 
 The CV setup is based on <https://github.com/sinaatalay/rendercv-pipeline> (see `cv/LICENSE`) and was previously its own repository, `thekyria/rendercv-pipeline`.
 
+## Dependencies
+
+The site itself is plain HTML/CSS with no scripts, frameworks or CDN assets; its fonts are vendored.
+
+| Dependency | Version | Scope | Declared in |
+| --- | --- | --- | --- |
+| [RenderCV](https://github.com/rendercv/rendercv) (`rendercv[full]`) | 2.8 | Build only (CV PDF) | `cv/requirements.txt` |
+| Python | 3.13 | Build only (RenderCV, `radar/check.py`) | `.python-version` |
+| [GFS Didot](https://www.greekfontsociety-gfs.gr/) font | — | Site, vendored | `site/fonts/` (`OFL.txt`) |
+| [Simple Icons](https://simpleicons.org) brand icons | 13.21.0 | Site, inlined SVG | `site/index.html` |
+
+GitHub Actions used by the workflows are kept up to date by Dependabot (`.github/dependabot.yml`), as is `cv/requirements.txt`.
+
+## Subprojects
+
+There are no subprojects or additional repositories. The CV and the tech radar used to live in `thekyria/rendercv-pipeline` and `thekyria/tech_radar` and are now maintained only here.
+
+## Contributing and reporting bugs
+
+Report bugs at <https://github.com/thekyria/thekyria.github.io/issues> and security issues privately as described in [SECURITY.md](SECURITY.md). See [CONTRIBUTING.md](CONTRIBUTING.md) for how to propose a change, including the pre-commit hooks (`pre-commit install`).
+
 ## Rendering the CV from the CLI
 
 Note: package `rendercv` requires Python >=3.10. For this make sure to have [pyenv](https://github.com/pyenv/pyenv) (or [pyenv-win](https://github.com/pyenv-win/pyenv-win/)) installed, so that `.python-version` at repo root is respected. Also, you need to have pyenv-installed the pointed-to version.
