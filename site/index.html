@@ -3,48 +3,85 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
   <title>home/thekyria – Theodoros Kyriakidis Homepage</title>
   <meta name="description" content="Theodoros Kyriakidis, Head of Embedded Software and QA at GWF. CV and links.">
   <style>
+    /* GFS Didot, Greek Font Society, SIL Open Font License 1.1 (fonts/OFL.txt) */
+    @font-face { font-family: "GFS Didot"; src: url(fonts/GFSDidot-Regular.otf) format("opentype"); font-weight: 400; font-style: normal; font-display: swap; }
+    @font-face { font-family: "GFS Didot"; src: url(fonts/GFSDidot-Italic.otf) format("opentype"); font-weight: 400; font-style: italic; font-display: swap; }
+    /* Colours from the theworks design system: theworks-blue #1034a6, theworks-azurewhite #f0ffff */
     :root {
-      --bg: #fff;
-      --fg: #1a1a1a;
-      --muted: #555;
-      --link: #004f90;
-      --rule: #ddd;
+      --page: #f0ffff;
+      --ink: #1034a6;
+      --link: #1034a6;
+      --link-hover: #0a2275;
+      --rule: rgba(16, 52, 166, 0.25);
+      --panel: #1034a6;
+      --panel-ink: #f0ffff;
+      --panel-rule: rgba(240, 255, 255, 0.3);
     }
     @media (prefers-color-scheme: dark) {
       :root {
-        --bg: #121212;
-        --fg: #e8e8e8;
-        --muted: #a0a0a0;
-        --link: #6cb4ff;
-        --rule: #333;
+        --page: #0a1230;
+        --ink: #f0ffff;
+        --link: #9db4ff;
+        --link-hover: #c7d4ff;
+        --rule: rgba(240, 255, 255, 0.2);
       }
     }
     body {
-      margin: 0 auto;
-      max-width: 40rem;
-      padding: 4rem 1rem;
-      background: var(--bg);
-      color: var(--fg);
+      margin: 0;
+      background: var(--page);
+      color: var(--ink);
       font: 1.0625rem/1.6 system-ui, sans-serif;
     }
-    h1 { margin: 0; font-size: 2rem; font-weight: 600; }
-    p { margin: 0.25rem 0 0; color: var(--muted); }
-    ul { margin: 2rem 0 0; padding: 0; list-style: none; }
-    li { margin: 0.5rem 0; }
     a { color: var(--link); }
-    .photo { display: block; width: 6rem; height: 6rem; margin-bottom: 1.5rem; border-radius: 50%; }
-    .bio { margin-top: 1.5rem; color: var(--fg); }
+    a:hover { color: var(--link-hover); }
+    .serif { font-family: "GFS Didot", Didot, Georgia, serif; font-weight: 400; }
+    .layout { display: flex; flex-wrap: wrap; min-height: 100vh; }
+    .panel {
+      flex: 1 1 320px;
+      box-sizing: border-box;
+      padding: 4rem 2.5rem;
+      background: var(--panel);
+      color: var(--panel-ink);
+    }
+    .photo { display: block; width: 8rem; height: 8rem; margin-bottom: 1.5rem; border-radius: 4px; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); }
+    h1 { margin: 0; font-size: 2.5rem; line-height: 1.1; }
+    .role { margin: 0.5rem 0 0; font-size: 1.25rem; font-style: italic; }
+    .place { margin: 0; font-size: 0.9375rem; }
+    .panel h2 { margin: 2.5rem 0 0.5rem; font-size: 1.25rem; font-style: italic; }
+    .links { margin: 2rem 0 0; padding: 0; list-style: none; }
+    .panel h2 + .links { margin-top: 0; }
+    .links a {
+      display: block;
+      padding: 0.625rem 0;
+      border-top: 1px solid var(--panel-rule);
+      color: var(--panel-ink);
+      text-decoration: none;
+    }
+    .links li:last-child a { border-bottom: 1px solid var(--panel-rule); }
+    .links a:hover { text-decoration: underline; }
+    main {
+      flex: 999 1 560px;
+      min-width: 0;
+      box-sizing: border-box;
+      padding: 4rem 2.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 3rem;
+    }
+    .about, footer { max-width: 38rem; }
+    .about h2 { margin: 0; font-size: 2rem; }
+    .about p { margin: 1.25rem 0 0; font-size: 1.125rem; }
     footer {
       display: flex;
       flex-wrap: wrap;
       gap: 0.25rem 0.5rem;
-      margin-top: 3rem;
       padding-top: 1rem;
       border-top: 1px solid var(--rule);
-      color: var(--muted);
       font-size: 0.875rem;
     }
     footer > :not(:first-child)::before { content: "•" / ""; margin-right: 0.5rem; }
@@ -52,24 +89,40 @@
   </style>
 </head>
 <body>
-  <a href="https://libraryofbabel.info/bookmark.cgi?theodoros.kyriakidis"><img class="photo" src="theo.jpg" width="200" height="200" alt="Theodoros Kyriakidis"></a>
-  <h1>Theodoros Kyriakidis</h1>
-  <p>Head of Embedded Software and QA at GWF</p>
-  <p>Thessaloniki, GR · Lucerne, CH</p>
-  <p class="bio">Welcome! I am Theodoros Kyriakidis. I am born in <a href="https://en.wikipedia.org/wiki/Thessaloniki">Thessaloniki, Greece</a> where I also currently reside. I have a MSc in Electrical Engineering from the <a href="http://ee.auth.gr/">Aristotle University</a> and a PhD <a href="https://infoscience.epfl.ch/record/210782?ln=en">somewhere between Electronics, Computer Architecture and the Smart Grid</a> from the <a href="https://elab.epfl.ch/">École Polytechnique Fédérale de Lausanne (EPFL)</a>, in <a href="https://en.wikipedia.org/wiki/Lausanne">Lausanne, Switzerland</a>. After four great years with <a href="https://www.cisco.com/">Cisco Systems</a> at <a href="https://epfl-innovationpark.ch/">Lausanne</a>, and 11 years in my beloved Switzerland I am back in Thessaloniki (mostly 😃) and I head Embedded Software and QA at <a href="https://gwf.ch/en/">GWF</a>.</p>
-  <ul>
-    <li><a href="thekyria_CV.pdf">CV (PDF)</a></li>
-    <li><a href="https://radar.thoughtworks.com/?documentId=https%3A%2F%2Fthekyria.com%2Ftech_radar.json">Tech radar</a></li>
-    <li><a href="https://linkedin.com/in/theodoroskyriakidis">LinkedIn</a></li>
-    <li><a href="https://github.com/thekyria">GitHub</a></li>
-    <li><a href="https://scholar.google.com/citations?user=k05LbAMAAAAJ">Google Scholar</a></li>
-    <li><a href="https://www.goodreads.com/thekyria">Goodreads</a></li>
-    <li><a href="mailto:thekyria@gmail.com">thekyria@gmail.com</a></li>
-  </ul>
-  <footer>
-    <span>©<!-- year --> Theodoros Kyriakidis</span>
-    <span><a href="https://github.com/thekyria/thekyria.github.io">Source</a></span>
-    <!-- version -->
-  </footer>
+  <div class="layout">
+    <aside class="panel">
+      <a href="https://libraryofbabel.info/bookmark.cgi?theodoros.kyriakidis"><img class="photo" src="theo.jpg" width="200" height="200" alt="Theodoros Kyriakidis"></a>
+      <h1 class="serif">Theodoros Kyriakidis</h1>
+      <p class="role serif">Head of Embedded Software and QA at GWF</p>
+      <p class="place">Thessaloniki, GR · Lucerne, CH</p>
+      <nav aria-label="Links">
+        <ul class="links">
+          <li><a href="thekyria_CV.pdf">CV (PDF)</a></li>
+          <li><a href="https://radar.thoughtworks.com/?documentId=https%3A%2F%2Fthekyria.com%2Ftech_radar.json">Tech radar</a></li>
+          <li><a href="https://scholar.google.com/citations?user=k05LbAMAAAAJ">Google Scholar</a></li>
+          <li><a href="mailto:thekyria@gmail.com">thekyria@gmail.com</a></li>
+        </ul>
+      </nav>
+      <section aria-labelledby="connect">
+        <h2 id="connect" class="serif">Connect with me</h2>
+        <ul class="links">
+          <li><a href="https://linkedin.com/in/theodoroskyriakidis">LinkedIn</a></li>
+          <li><a href="https://github.com/thekyria">GitHub</a></li>
+          <li><a href="https://www.goodreads.com/thekyria">Goodreads</a></li>
+        </ul>
+      </section>
+    </aside>
+    <main>
+      <section class="about" aria-labelledby="about">
+        <h2 id="about" class="serif">About</h2>
+        <p>Welcome! I am Theodoros Kyriakidis. I am born in <a href="https://en.wikipedia.org/wiki/Thessaloniki">Thessaloniki, Greece</a> where I also currently reside. I have a MSc in Electrical Engineering from the <a href="http://ee.auth.gr/">Aristotle University</a> and a PhD <a href="https://infoscience.epfl.ch/record/210782?ln=en">somewhere between Electronics, Computer Architecture and the Smart Grid</a> from the <a href="https://elab.epfl.ch/">École Polytechnique Fédérale de Lausanne (EPFL)</a>, in <a href="https://en.wikipedia.org/wiki/Lausanne">Lausanne, Switzerland</a>. After four great years with <a href="https://www.cisco.com/">Cisco Systems</a> at <a href="https://epfl-innovationpark.ch/">Lausanne</a>, and 11 years in my beloved Switzerland I am back in Thessaloniki (mostly 😃) and I head Embedded Software and QA at <a href="https://gwf.ch/en/">GWF</a>.</p>
+      </section>
+      <footer>
+        <span>©<!-- year --> Theodoros Kyriakidis</span>
+        <span><a href="https://github.com/thekyria/thekyria.github.io">Source</a></span>
+        <!-- version -->
+      </footer>
+    </main>
+  </div>
 </body>
 </html>
