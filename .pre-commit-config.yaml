@@ -10,3 +10,8 @@ repos:
         # The site's images, icons and fonts are source assets, not build output
         # (same list as .github/workflows/binary-artifacts.yaml).
         exclude: ^site/.*\.(png|ico|jpg|otf)$
+  # Secret scanning (OSPS-BR-07.01)
+  - repo: https://github.com/gitleaks/gitleaks
+    rev: v8.28.0
+    hooks:
+      - id: gitleaks
