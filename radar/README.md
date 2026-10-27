@@ -2,7 +2,7 @@
 
 Based on: <https://github.com/thoughtworks/build-your-own-radar>
 
-Published at <https://thekyria.github.io/tech_radar.json> (copied into the site by `.github/workflows/pages.yaml`) and rendered by the hosted BYOR at <https://radar.thoughtworks.com/?documentId=https%3A%2F%2Fthekyria.github.io%2Ftech_radar.json>.
+Published at <https://thekyria.com/tech_radar.json> (copied into the site by `.github/workflows/pages.yaml`) and rendered by the hosted BYOR at <https://radar.thoughtworks.com/?documentId=https%3A%2F%2Fthekyria.com%2Ftech_radar.json>.
 
 Validate the json (also run on every PR by `.github/workflows/pr.yaml`):
 
