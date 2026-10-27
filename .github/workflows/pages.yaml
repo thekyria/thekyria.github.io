@@ -33,6 +33,13 @@ jobs:
       - name: Copy tech radar data into the site
         # Rendered by radar.thoughtworks.com, which fetches it from the published site
         run: cp radar/tech_radar.json site/
+      - name: Stamp the deployed commit into the footer
+        # The site is deployed continuously, so the deployed git commit acts as the version
+        run: |
+          url="${{ github.server_url }}/${{ github.repository }}/commit/${GITHUB_SHA}"
+          version="<span>Version <a class=\"commit\" href=\"${url}\" title=\"Commit ${GITHUB_SHA}\">${GITHUB_SHA::7}</a></span>"
+          grep -q '<!-- version -->' site/index.html
+          sed -i "s|<!-- version -->|${version}|" site/index.html
       - uses: actions/configure-pages@v6
       - uses: actions/upload-pages-artifact@v5
         with:
