@@ -50,7 +50,11 @@
     .photo { display: block; width: 8rem; height: 8rem; margin-bottom: 1.5rem; border-radius: 4px; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); }
     h1 { margin: 0; font-size: 2.5rem; line-height: 1.1; }
     .role { margin: 0.5rem 0 0; font-size: 1.25rem; font-style: italic; }
-    .place { margin: 0; font-size: 0.9375rem; }
+    .place { margin: 0.25rem 0 0; font-size: 0.9375rem; }
+    .place a { color: var(--panel-ink); text-decoration-color: var(--panel-rule); text-underline-offset: 0.2em; }
+    .place a:hover { color: var(--panel-ink); text-decoration-color: currentColor; }
+    .pin { width: 0.8em; height: 0.8em; margin-right: 0.15em; fill: currentColor; vertical-align: -0.05em; }
+    .flag { height: 0.8em; width: auto; margin-left: 0.3em; vertical-align: -0.05em; border-radius: 1px; }
     .panel h2 { margin: 2.5rem 0 0.5rem; font-size: 1.25rem; font-style: italic; }
     .links { margin: 2rem 0 0; padding: 0; list-style: none; }
     .links a {
@@ -105,8 +109,12 @@
     <aside class="panel">
       <a href="https://libraryofbabel.info/bookmark.cgi?theodoros.kyriakidis"><img class="photo" src="theo.jpg" width="200" height="200" alt="Theodoros Kyriakidis"></a>
       <h1 class="serif">Theodoros Kyriakidis</h1>
-      <p class="role serif">Head of Embedded Software and QA at GWF</p>
-      <p class="place">Thessaloniki, GR · Lucerne, CH</p>
+      <p class="role serif">PhD EE &amp; CS</p>
+      <p class="place">
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=Thessaloniki%2C+Greece"><svg class="pin" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill-rule="evenodd" d="M12 0C7.03 0 3 4.03 3 9c0 6.75 9 15 9 15s9-8.25 9-15c0-4.97-4.03-9-9-9zm0 12.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/></svg>Thessaloniki</a><svg class="flag" viewBox="0 0 27 18" role="img" aria-label="Greece"><rect width="27" height="18" fill="#0d5eaf"/><path fill="#fff" d="M10 2h17v2H10zm0 4h17v2H10zM0 10h27v2H0zm0 4h27v2H0zM4 0h2v10H4zM0 4h10v2H0z"/></svg>
+        ·
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=Lucerne%2C+Switzerland"><svg class="pin" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill-rule="evenodd" d="M12 0C7.03 0 3 4.03 3 9c0 6.75 9 15 9 15s9-8.25 9-15c0-4.97-4.03-9-9-9zm0 12.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/></svg>Lucerne</a><svg class="flag" viewBox="0 0 32 32" role="img" aria-label="Switzerland"><rect width="32" height="32" fill="#da291c"/><path fill="#fff" d="M13 6h6v7h7v6h-7v7h-6v-7H6v-6h7z"/></svg>
+      </p>
       <nav aria-label="Links">
         <ul class="links">
           <li><a href="thekyria_CV.pdf">CV (PDF)</a></li>
@@ -127,7 +135,7 @@
     </aside>
     <main>
       <section class="about" aria-labelledby="about">
-        <h2 id="about" class="serif">About</h2>
+        <h2 id="about" class="serif">::1</h2>
         <p>Welcome! I am Theodoros Kyriakidis. I am born in <a href="https://en.wikipedia.org/wiki/Thessaloniki">Thessaloniki, Greece</a> where I also currently reside. I have a MSc in Electrical Engineering from the <a href="http://ee.auth.gr/">Aristotle University</a> and a PhD <a href="https://infoscience.epfl.ch/record/210782?ln=en">somewhere between Electronics, Computer Architecture and the Smart Grid</a> from the <a href="https://elab.epfl.ch/">École Polytechnique Fédérale de Lausanne (EPFL)</a>, in <a href="https://en.wikipedia.org/wiki/Lausanne">Lausanne, Switzerland</a>. After four great years with <a href="https://www.cisco.com/">Cisco Systems</a> at <a href="https://epfl-innovationpark.ch/">Lausanne</a>, and 11 years in my beloved Switzerland I am back in Thessaloniki (mostly 😃) and I head Embedded Software and QA at <a href="https://gwf.ch/en/">GWF</a>.</p>
       </section>
       <footer>
