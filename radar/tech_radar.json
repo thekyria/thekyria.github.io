@@ -288,7 +288,7 @@
   },
   {
     "name": "FastAPI",
-    "ring": "learn",
+    "ring": "use",
     "quadrant": "languages & frameworks",
     "isNew": "FALSE",
     "description": "Modern, type-hinted Python web API framework."
@@ -957,5 +957,152 @@
     "quadrant": "techniques",
     "isNew": "TRUE",
     "description": "Fractional math on integers, for hardware without an FPU; explored in thefblas."
+  },
+  {
+    "name": "SQLAlchemy",
+    "ring": "use",
+    "quadrant": "languages & frameworks",
+    "isNew": "TRUE",
+    "description": "Python SQL toolkit and ORM."
+  },
+  {
+    "name": "Alembic",
+    "ring": "learn",
+    "quadrant": "languages & frameworks",
+    "isNew": "TRUE",
+    "description": "Database schema migrations for SQLAlchemy."
+  },
+  {
+    "name": "HTMX",
+    "ring": "learn",
+    "quadrant": "languages & frameworks",
+    "isNew": "TRUE",
+    "description": "Dynamic web pages from HTML attributes, with little JavaScript."
+  },
+  {
+    "name": "Jinja2",
+    "ring": "learn",
+    "quadrant": "languages & frameworks",
+    "isNew": "TRUE",
+    "description": "Python templating engine for HTML and text."
+  },
+  {
+    "name": "Pydantic",
+    "ring": "learn",
+    "quadrant": "languages & frameworks",
+    "isNew": "TRUE",
+    "description": "Data validation with Python type hints."
+  },
+  {
+    "name": "scikit-learn",
+    "ring": "learn",
+    "quadrant": "languages & frameworks",
+    "isNew": "TRUE",
+    "description": "Classic machine learning in Python."
+  },
+  {
+    "name": "TensorFlow",
+    "ring": "learn",
+    "quadrant": "languages & frameworks",
+    "isNew": "TRUE",
+    "description": "Google's machine learning framework."
+  },
+  {
+    "name": "Matplotlib",
+    "ring": "learn",
+    "quadrant": "languages & frameworks",
+    "isNew": "TRUE",
+    "description": "Plotting and charts in Python."
+  },
+  {
+    "name": "FreeRTOS",
+    "ring": "learn",
+    "quadrant": "languages & frameworks",
+    "isNew": "TRUE",
+    "description": "Real-time operating system kernel for microcontrollers."
+  },
+  {
+    "name": "tmux",
+    "ring": "use",
+    "quadrant": "tools",
+    "isNew": "TRUE",
+    "description": "Terminal multiplexer: sessions, windows and panes in one terminal."
+  },
+  {
+    "name": "nano",
+    "ring": "use",
+    "quadrant": "tools",
+    "isNew": "TRUE",
+    "description": "Simple terminal text editor."
+  },
+  {
+    "name": "GDB",
+    "ring": "use",
+    "quadrant": "tools",
+    "isNew": "TRUE",
+    "description": "The GNU debugger."
+  },
+  {
+    "name": "Sanitizers (ASan, UBSan)",
+    "ring": "use",
+    "quadrant": "tools",
+    "isNew": "TRUE",
+    "description": "Compiler instrumentation that catches memory errors and undefined behavior at run time."
+  },
+  {
+    "name": "Docker Compose",
+    "ring": "use",
+    "quadrant": "tools",
+    "isNew": "TRUE",
+    "description": "Runs multi-container setups, e.g. an app with its database, from one file."
+  },
+  {
+    "name": "Jupyter",
+    "ring": "learn",
+    "quadrant": "tools",
+    "isNew": "TRUE",
+    "description": "Notebooks that mix code, results and notes."
+  },
+  {
+    "name": "STM32CubeIDE",
+    "ring": "learn",
+    "quadrant": "tools",
+    "isNew": "TRUE",
+    "description": "ST's Eclipse-based IDE for STM32 microcontrollers."
+  },
+  {
+    "name": "STM32",
+    "ring": "learn",
+    "quadrant": "platforms",
+    "isNew": "TRUE",
+    "description": "ST's family of ARM Cortex-M microcontrollers."
+  },
+  {
+    "name": "Reproducible builds",
+    "ring": "learn",
+    "quadrant": "techniques",
+    "isNew": "TRUE",
+    "description": "The same source always builds to bit-identical binaries, e.g. with SOURCE_DATE_EPOCH."
+  },
+  {
+    "name": "Machine learning",
+    "ring": "learn",
+    "quadrant": "techniques",
+    "isNew": "TRUE",
+    "description": "Regression, classification and recommenders, learned from data."
+  },
+  {
+    "name": "API-first design",
+    "ring": "learn",
+    "quadrant": "techniques",
+    "isNew": "TRUE",
+    "description": "Design the API first; the UI and clients are built on it."
+  },
+  {
+    "name": "Database migrations",
+    "ring": "learn",
+    "quadrant": "techniques",
+    "isNew": "TRUE",
+    "description": "Versioned, reviewable schema changes that evolve with the code."
   }
 ]
