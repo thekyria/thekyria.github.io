@@ -83,3 +83,7 @@ The release pipeline (`.github/workflows/release.yaml`) triggers upon pushing a 
 git tag v2026.04.30
 git push origin --tags
 ```
+
+## License
+
+[MIT](LICENSE), except for third-party parts under their own licenses: the CV setup derived from rendercv-pipeline (`cv/LICENSE`, MIT), the GFS Didot font (`site/fonts/OFL.txt`, SIL OFL 1.1) and the Simple Icons brand icons (CC0).
