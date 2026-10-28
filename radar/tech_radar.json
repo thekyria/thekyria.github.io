@@ -4,594 +4,1021 @@
     "ring": "learn",
     "quadrant": "tools",
     "isNew": "FALSE",
-    "description": ""
+    "description": "Apache Subversion, a centralized version control system."
   },
   {
     "name": "git",
     "ring": "use",
     "quadrant": "tools",
     "isNew": "FALSE",
-    "description": ""
+    "description": "Distributed version control system."
   },
   {
     "name": "Bazel",
     "ring": "evaluate",
     "quadrant": "languages & frameworks",
     "isNew": "FALSE",
-    "description": ""
+    "description": "Google's build system for large, multi-language codebases."
   },
   {
     "name": "Cisco IOSXE",
     "ring": "use",
     "quadrant": "platforms",
     "isNew": "FALSE",
-    "description": ""
+    "description": "Cisco's network operating system for switches, routers and wireless controllers."
   },
   {
     "name": "DevOps",
     "ring": "use",
     "quadrant": "techniques",
     "isNew": "FALSE",
-    "description": ""
+    "description": "Development and operations as one practice: automation, CI/CD, shared ownership."
   },
   {
     "name": "ChatGPT",
     "ring": "use",
     "quadrant": "tools",
     "isNew": "FALSE",
-    "description": ""
+    "description": "OpenAI's AI chat assistant."
   },
   {
     "name": "GitHub Copilot",
     "ring": "use",
     "quadrant": "tools",
     "isNew": "FALSE",
-    "description": ""
+    "description": "AI pair programmer in the editor and on GitHub."
   },
   {
     "name": "Elastic",
     "ring": "learn",
     "quadrant": "languages & frameworks",
     "isNew": "FALSE",
-    "description": ""
+    "description": "Elastic Stack: Elasticsearch, Kibana and friends for search and analytics."
   },
   {
     "name": "Discord",
     "ring": "learn",
     "quadrant": "tools",
     "isNew": "FALSE",
-    "description": ""
+    "description": "Chat and voice platform for communities."
   },
   {
     "name": "Microsoft Teams",
     "ring": "use",
     "quadrant": "tools",
     "isNew": "FALSE",
-    "description": ""
+    "description": "Chat, meetings and collaboration in Microsoft 365."
   },
   {
     "name": "Slack",
     "ring": "use",
     "quadrant": "tools",
     "isNew": "FALSE",
-    "description": ""
+    "description": "Team chat and collaboration."
   },
   {
     "name": "Cisco Webex Teams",
     "ring": "use",
     "quadrant": "tools",
     "isNew": "FALSE",
-    "description": ""
+    "description": "Cisco's chat and meetings app."
   },
   {
     "name": "Zoom",
     "ring": "use",
     "quadrant": "tools",
     "isNew": "FALSE",
-    "description": ""
+    "description": "Video meetings."
   },
   {
     "name": "Trello",
     "ring": "learn",
     "quadrant": "tools",
     "isNew": "FALSE",
-    "description": ""
+    "description": "Kanban-style boards for tasks."
   },
   {
     "name": "Doxygen",
     "ring": "use",
     "quadrant": "languages & frameworks",
     "isNew": "FALSE",
-    "description": ""
+    "description": "Documentation generator for C, C++ and more, from source comments."
   },
   {
     "name": "Markdown",
     "ring": "use",
     "quadrant": "languages & frameworks",
     "isNew": "FALSE",
-    "description": ""
+    "description": "Lightweight markup for docs, READMEs and notes."
   },
   {
     "name": "Confluence",
     "ring": "use",
     "quadrant": "tools",
     "isNew": "FALSE",
-    "description": ""
+    "description": "Atlassian's team wiki and documentation space."
   },
   {
     "name": "Jira",
     "ring": "use",
     "quadrant": "tools",
     "isNew": "FALSE",
-    "description": ""
+    "description": "Atlassian's issue and project tracker."
   },
   {
     "name": "CLion",
     "ring": "use",
     "quadrant": "tools",
     "isNew": "FALSE",
-    "description": ""
+    "description": "JetBrains IDE for C and C++."
   },
   {
     "name": "Eclipse",
     "ring": "learn",
     "quadrant": "tools",
     "isNew": "FALSE",
-    "description": ""
+    "description": "Extensible open-source IDE, base of many vendor embedded IDEs."
   },
   {
     "name": "PyCharm",
     "ring": "use",
     "quadrant": "tools",
     "isNew": "FALSE",
-    "description": ""
+    "description": "JetBrains IDE for Python."
   },
   {
     "name": "QT Creator",
     "ring": "use",
     "quadrant": "tools",
     "isNew": "FALSE",
-    "description": ""
+    "description": "IDE for Qt and C++ development."
   },
   {
     "name": "Visual Studio",
     "ring": "learn",
     "quadrant": "tools",
     "isNew": "FALSE",
-    "description": ""
+    "description": "Microsoft's IDE for C++ and .NET on Windows."
   },
   {
     "name": "Visual Studio Code",
     "ring": "use",
     "quadrant": "tools",
     "isNew": "FALSE",
-    "description": ""
+    "description": "Lightweight, extensible code editor."
   },
   {
     "name": "Unity (C unit testing)",
     "ring": "learn",
     "quadrant": "languages & frameworks",
     "isNew": "FALSE",
-    "description": ""
+    "description": "Lightweight unit testing framework for C, popular in embedded."
   },
   {
     "name": "Google Test",
     "ring": "evaluate",
     "quadrant": "languages & frameworks",
     "isNew": "FALSE",
-    "description": ""
+    "description": "Google's C++ testing and mocking framework."
   },
   {
     "name": "Catch2",
     "ring": "learn",
     "quadrant": "languages & frameworks",
     "isNew": "FALSE",
-    "description": ""
+    "description": "Header-friendly unit testing framework for C++."
   },
   {
     "name": "QMake",
     "ring": "use",
     "quadrant": "languages & frameworks",
     "isNew": "FALSE",
-    "description": ""
+    "description": "Qt's original build system generator."
   },
   {
     "name": "LLVM Clang",
     "ring": "use",
     "quadrant": "tools",
     "isNew": "FALSE",
-    "description": ""
+    "description": "C/C++ compiler front end of the LLVM project."
   },
   {
     "name": "IAR",
     "ring": "use",
     "quadrant": "tools",
     "isNew": "FALSE",
-    "description": ""
+    "description": "IAR Embedded Workbench, a commercial compiler and IDE for microcontrollers."
   },
   {
     "name": "GNU GCC",
     "ring": "use",
     "quadrant": "tools",
     "isNew": "FALSE",
-    "description": ""
+    "description": "The GNU Compiler Collection."
   },
   {
     "name": "Yarn",
     "ring": "learn",
     "quadrant": "tools",
     "isNew": "FALSE",
-    "description": ""
+    "description": "JavaScript package manager."
   },
   {
     "name": "Ansible",
     "ring": "use",
     "quadrant": "tools",
     "isNew": "FALSE",
-    "description": ""
+    "description": "Agentless automation for configuration management and provisioning."
   },
   {
     "name": "Make",
     "ring": "use",
     "quadrant": "languages & frameworks",
     "isNew": "FALSE",
-    "description": ""
+    "description": "Classic build automation with Makefiles."
   },
   {
     "name": "CMake",
     "ring": "use",
     "quadrant": "languages & frameworks",
     "isNew": "FALSE",
-    "description": ""
+    "description": "Cross-platform build system generator for C and C++."
   },
   {
     "name": "Chocolatey",
     "ring": "use",
     "quadrant": "tools",
     "isNew": "FALSE",
-    "description": ""
+    "description": "Package manager for Windows."
   },
   {
     "name": "pip",
     "ring": "use",
     "quadrant": "tools",
     "isNew": "FALSE",
-    "description": ""
+    "description": "Python package installer."
   },
   {
     "name": "npm",
     "ring": "learn",
     "quadrant": "tools",
     "isNew": "FALSE",
-    "description": ""
+    "description": "Node.js package manager and registry."
   },
   {
     "name": "Qt",
     "ring": "use",
     "quadrant": "languages & frameworks",
     "isNew": "FALSE",
-    "description": ""
+    "description": "Cross-platform C++ application and GUI framework."
   },
   {
     "name": "Pandas",
     "ring": "evaluate",
     "quadrant": "languages & frameworks",
     "isNew": "FALSE",
-    "description": ""
+    "description": "Data frames and data analysis for Python."
   },
   {
     "name": "NumPy",
     "ring": "learn",
     "quadrant": "languages & frameworks",
     "isNew": "FALSE",
-    "description": ""
+    "description": "Numerical arrays and linear algebra for Python."
   },
   {
     "name": "FastAPI",
-    "ring": "learn",
+    "ring": "use",
     "quadrant": "languages & frameworks",
     "isNew": "FALSE",
-    "description": ""
+    "description": "Modern, type-hinted Python web API framework."
   },
   {
     "name": "Django",
     "ring": "learn",
     "quadrant": "languages & frameworks",
     "isNew": "FALSE",
-    "description": ""
+    "description": "Batteries-included Python web framework."
   },
   {
     "name": "Flask",
     "ring": "learn",
     "quadrant": "languages & frameworks",
     "isNew": "FALSE",
-    "description": ""
-  },  
+    "description": "Minimal Python web framework."
+  },
   {
     "name": "Express.js",
     "ring": "learn",
     "quadrant": "languages & frameworks",
     "isNew": "FALSE",
-    "description": ""
+    "description": "Minimal web framework for Node.js."
   },
   {
     "name": "jQuery",
     "ring": "learn",
     "quadrant": "languages & frameworks",
     "isNew": "FALSE",
-    "description": ""
+    "description": "Classic JavaScript library for DOM manipulation."
   },
   {
     "name": "React",
     "ring": "learn",
     "quadrant": "languages & frameworks",
     "isNew": "FALSE",
-    "description": ""
+    "description": "JavaScript library for building user interfaces."
   },
   {
     "name": "Node.js",
     "ring": "learn",
     "quadrant": "languages & frameworks",
     "isNew": "FALSE",
-    "description": ""
+    "description": "JavaScript runtime outside the browser."
   },
   {
     "name": "Azure DevOps",
     "ring": "use",
     "quadrant": "platforms",
     "isNew": "FALSE",
-    "description": ""
+    "description": "Microsoft's repos, pipelines and boards."
   },
   {
     "name": "GitLab",
     "ring": "learn",
     "quadrant": "platforms",
     "isNew": "FALSE",
-    "description": ""
+    "description": "Git hosting with built-in CI/CD."
   },
   {
     "name": "Bitbucket",
     "ring": "use",
     "quadrant": "platforms",
     "isNew": "FALSE",
-    "description": ""
+    "description": "Atlassian's Git hosting."
   },
   {
     "name": "GitHub",
     "ring": "use",
     "quadrant": "platforms",
     "isNew": "FALSE",
-    "description": ""
+    "description": "Git hosting, collaboration, issues and pull requests."
   },
   {
     "name": "CodeSandbox",
     "ring": "learn",
     "quadrant": "platforms",
     "isNew": "FALSE",
-    "description": ""
+    "description": "Online development environments in the browser."
   },
   {
     "name": "Kubernetes",
     "ring": "learn",
     "quadrant": "platforms",
     "isNew": "FALSE",
-    "description": ""
+    "description": "Container orchestration."
   },
   {
     "name": "Docker",
     "ring": "use",
     "quadrant": "platforms",
     "isNew": "FALSE",
-    "description": ""
+    "description": "Containers for reproducible builds and services."
   },
   {
     "name": "Linux",
     "ring": "use",
     "quadrant": "platforms",
     "isNew": "FALSE",
-    "description": ""
+    "description": "Open-source operating system, for development and deployment."
   },
   {
     "name": "Windows",
     "ring": "use",
     "quadrant": "platforms",
     "isNew": "FALSE",
-    "description": ""
+    "description": "Microsoft's desktop operating system."
   },
   {
     "name": "WSL",
     "ring": "use",
     "quadrant": "platforms",
     "isNew": "FALSE",
-    "description": ""
+    "description": "Windows Subsystem for Linux."
   },
   {
     "name": "AWS",
     "ring": "evaluate",
     "quadrant": "platforms",
     "isNew": "FALSE",
-    "description": ""
+    "description": "Amazon Web Services cloud."
   },
   {
     "name": "Linode",
     "ring": "use",
     "quadrant": "platforms",
     "isNew": "FALSE",
-    "description": ""
+    "description": "Cloud virtual machines and hosting (Akamai)."
   },
   {
     "name": "Vercel",
     "ring": "use",
     "quadrant": "platforms",
     "isNew": "FALSE",
-    "description": ""
+    "description": "Hosting and serverless functions for web frontends."
   },
   {
     "name": "VMWare",
     "ring": "learn",
     "quadrant": "platforms",
     "isNew": "FALSE",
-    "description": ""
+    "description": "Virtualization platforms and desktop hypervisors."
   },
   {
     "name": "Azure",
     "ring": "use",
     "quadrant": "platforms",
     "isNew": "FALSE",
-    "description": ""
+    "description": "Microsoft's cloud."
   },
   {
     "name": "MariaDB",
     "ring": "use",
     "quadrant": "languages & frameworks",
     "isNew": "FALSE",
-    "description": ""
+    "description": "Open-source relational database, a fork of MySQL."
   },
   {
     "name": "PostgreSQL",
     "ring": "use",
     "quadrant": "languages & frameworks",
     "isNew": "FALSE",
-    "description": ""
+    "description": "Open-source relational database."
   },
   {
     "name": "Groovy",
     "ring": "learn",
     "quadrant": "languages & frameworks",
     "isNew": "FALSE",
-    "description": ""
+    "description": "JVM scripting language, e.g. for Jenkins pipelines."
   },
   {
     "name": "Assembly (x86)",
     "ring": "learn",
     "quadrant": "languages & frameworks",
     "isNew": "FALSE",
-    "description": ""
+    "description": "Low-level programming for x86 processors."
   },
   {
     "name": "Assembly (ARM)",
     "ring": "learn",
     "quadrant": "languages & frameworks",
     "isNew": "FALSE",
-    "description": ""
+    "description": "Low-level programming for ARM processors."
   },
   {
     "name": "Rust",
     "ring": "evaluate",
     "quadrant": "languages & frameworks",
     "isNew": "FALSE",
-    "description": ""
+    "description": "Memory-safe systems programming language."
   },
   {
     "name": "Perl",
     "ring": "hold",
     "quadrant": "languages & frameworks",
     "isNew": "FALSE",
-    "description": ""
+    "description": "Text-processing scripting language."
   },
   {
     "name": "Ruby",
     "ring": "hold",
     "quadrant": "languages & frameworks",
     "isNew": "FALSE",
-    "description": ""
+    "description": "Dynamic scripting language, known for Rails."
   },
   {
     "name": "Go",
     "ring": "evaluate",
     "quadrant": "languages & frameworks",
     "isNew": "FALSE",
-    "description": ""
+    "description": "Simple, compiled language with built-in concurrency."
   },
   {
     "name": "PowerShell",
     "ring": "hold",
     "quadrant": "languages & frameworks",
     "isNew": "FALSE",
-    "description": ""
+    "description": "Microsoft's shell and scripting language."
   },
   {
     "name": "Windows CMD",
     "ring": "learn",
     "quadrant": "languages & frameworks",
     "isNew": "FALSE",
-    "description": ""
+    "description": "Windows command prompt and batch scripting."
   },
   {
     "name": "bash",
     "ring": "use",
     "quadrant": "languages & frameworks",
     "isNew": "FALSE",
-    "description": ""
+    "description": "Unix shell and scripting language."
   },
   {
     "name": "SQL",
     "ring": "use",
     "quadrant": "languages & frameworks",
     "isNew": "FALSE",
-    "description": ""
+    "description": "Query language for relational databases."
   },
   {
     "name": "CSS",
     "ring": "learn",
     "quadrant": "languages & frameworks",
     "isNew": "FALSE",
-    "description": ""
+    "description": "Styling language of the web."
   },
   {
     "name": "HTML",
     "ring": "use",
     "quadrant": "languages & frameworks",
     "isNew": "FALSE",
-    "description": ""
+    "description": "Markup language of the web."
   },
   {
     "name": "Python",
     "ring": "learn",
     "quadrant": "languages & frameworks",
     "isNew": "FALSE",
-    "description": ""
+    "description": "General-purpose language for scripting, tooling and data."
   },
   {
     "name": "JavaScript",
     "ring": "learn",
     "quadrant": "languages & frameworks",
     "isNew": "FALSE",
-    "description": ""
+    "description": "Language of the web, in the browser and on Node.js."
   },
   {
     "name": "Java",
     "ring": "learn",
     "quadrant": "languages & frameworks",
     "isNew": "FALSE",
-    "description": ""
+    "description": "General-purpose language for the JVM."
   },
   {
     "name": "PHP",
     "ring": "learn",
     "quadrant": "languages & frameworks",
     "isNew": "FALSE",
-    "description": ""
+    "description": "Server-side scripting language for the web."
   },
   {
     "name": "MATLAB",
     "ring": "use",
     "quadrant": "languages & frameworks",
     "isNew": "FALSE",
-    "description": ""
+    "description": "Numerical computing environment and language."
   },
   {
     "name": "C++",
     "ring": "use",
     "quadrant": "languages & frameworks",
     "isNew": "FALSE",
-    "description": ""
+    "description": "Systems and application programming language."
   },
   {
     "name": "C",
     "ring": "use",
     "quadrant": "languages & frameworks",
     "isNew": "FALSE",
-    "description": ""
+    "description": "Systems and embedded programming language."
+  },
+  {
+    "name": "Claude Code",
+    "ring": "use",
+    "quadrant": "tools",
+    "isNew": "TRUE",
+    "description": "Anthropic's agentic coding tool, for code changes, reviews and CI."
+  },
+  {
+    "name": "Claude",
+    "ring": "use",
+    "quadrant": "tools",
+    "isNew": "TRUE",
+    "description": "Anthropic's AI assistant."
+  },
+  {
+    "name": "pre-commit",
+    "ring": "use",
+    "quadrant": "tools",
+    "isNew": "TRUE",
+    "description": "Framework for git pre-commit hooks; runs formatters, linters and secret scans before each commit."
+  },
+  {
+    "name": "gitleaks",
+    "ring": "use",
+    "quadrant": "tools",
+    "isNew": "TRUE",
+    "description": "Scans commits for secrets, in pre-commit and in CI."
+  },
+  {
+    "name": "clang-format",
+    "ring": "use",
+    "quadrant": "tools",
+    "isNew": "TRUE",
+    "description": "Automatic C and C++ code formatting."
+  },
+  {
+    "name": "clang-tidy",
+    "ring": "use",
+    "quadrant": "tools",
+    "isNew": "TRUE",
+    "description": "Clang-based C++ linter and static analyzer."
+  },
+  {
+    "name": "cppcheck",
+    "ring": "use",
+    "quadrant": "tools",
+    "isNew": "TRUE",
+    "description": "Static analysis for C and C++."
+  },
+  {
+    "name": "codespell",
+    "ring": "learn",
+    "quadrant": "tools",
+    "isNew": "TRUE",
+    "description": "Finds common misspellings in code and docs."
+  },
+  {
+    "name": "markdownlint",
+    "ring": "learn",
+    "quadrant": "tools",
+    "isNew": "TRUE",
+    "description": "Linter for Markdown style and consistency."
+  },
+  {
+    "name": "CodeQL",
+    "ring": "use",
+    "quadrant": "tools",
+    "isNew": "TRUE",
+    "description": "GitHub's semantic code analysis for security vulnerabilities."
+  },
+  {
+    "name": "SonarCloud",
+    "ring": "use",
+    "quadrant": "tools",
+    "isNew": "TRUE",
+    "description": "Hosted code quality and security analysis with quality gates."
+  },
+  {
+    "name": "Grype",
+    "ring": "learn",
+    "quadrant": "tools",
+    "isNew": "TRUE",
+    "description": "Vulnerability scanner for container images, file systems and SBOMs."
+  },
+  {
+    "name": "Syft",
+    "ring": "learn",
+    "quadrant": "tools",
+    "isNew": "TRUE",
+    "description": "Generates software bills of materials (SBOMs)."
+  },
+  {
+    "name": "lcov / gcovr",
+    "ring": "learn",
+    "quadrant": "tools",
+    "isNew": "TRUE",
+    "description": "Code coverage reports from gcov data."
+  },
+  {
+    "name": "Ninja",
+    "ring": "use",
+    "quadrant": "tools",
+    "isNew": "TRUE",
+    "description": "Small, fast build system, used as a CMake generator."
+  },
+  {
+    "name": "Conan",
+    "ring": "learn",
+    "quadrant": "tools",
+    "isNew": "TRUE",
+    "description": "C and C++ package manager; theblas and thefblas ship Conan 2.x packages."
+  },
+  {
+    "name": "vcpkg",
+    "ring": "learn",
+    "quadrant": "tools",
+    "isNew": "TRUE",
+    "description": "Microsoft's C and C++ package manager; theblas and thefblas ship vcpkg ports."
+  },
+  {
+    "name": "QEMU",
+    "ring": "learn",
+    "quadrant": "tools",
+    "isNew": "TRUE",
+    "description": "Machine emulator; runs ARM cross-compiled tests on an x86 host."
+  },
+  {
+    "name": "uv",
+    "ring": "learn",
+    "quadrant": "tools",
+    "isNew": "TRUE",
+    "description": "Fast Python package and project manager."
+  },
+  {
+    "name": "ruff",
+    "ring": "learn",
+    "quadrant": "tools",
+    "isNew": "TRUE",
+    "description": "Fast Python linter and formatter."
+  },
+  {
+    "name": "pytest",
+    "ring": "use",
+    "quadrant": "tools",
+    "isNew": "TRUE",
+    "description": "Python testing framework."
+  },
+  {
+    "name": "RenderCV",
+    "ring": "use",
+    "quadrant": "tools",
+    "isNew": "TRUE",
+    "description": "Renders a CV from YAML to PDF; builds the CV on this site."
+  },
+  {
+    "name": "Postman",
+    "ring": "use",
+    "quadrant": "tools",
+    "isNew": "TRUE",
+    "description": "API client for exploring and testing HTTP APIs."
+  },
+  {
+    "name": "GIMP",
+    "ring": "use",
+    "quadrant": "tools",
+    "isNew": "TRUE",
+    "description": "Open-source raster image editor."
+  },
+  {
+    "name": "Inkscape",
+    "ring": "use",
+    "quadrant": "tools",
+    "isNew": "TRUE",
+    "description": "Open-source vector graphics editor."
+  },
+  {
+    "name": "Notepad++",
+    "ring": "use",
+    "quadrant": "tools",
+    "isNew": "TRUE",
+    "description": "Lightweight text and code editor for Windows."
+  },
+  {
+    "name": "Windows Terminal",
+    "ring": "use",
+    "quadrant": "tools",
+    "isNew": "TRUE",
+    "description": "Modern terminal for Windows, with tabs for shells and WSL."
+  },
+  {
+    "name": "Protocol Buffers",
+    "ring": "learn",
+    "quadrant": "languages & frameworks",
+    "isNew": "TRUE",
+    "description": "Google's language-neutral serialization format."
+  },
+  {
+    "name": "Boost",
+    "ring": "use",
+    "quadrant": "languages & frameworks",
+    "isNew": "TRUE",
+    "description": "Peer-reviewed C++ libraries."
+  },
+  {
+    "name": "GitHub Actions",
+    "ring": "use",
+    "quadrant": "platforms",
+    "isNew": "TRUE",
+    "description": "CI/CD on GitHub: builds, tests, scans, releases and deploys."
+  },
+  {
+    "name": "GitHub Pages",
+    "ring": "use",
+    "quadrant": "platforms",
+    "isNew": "TRUE",
+    "description": "Static site hosting from a repository; hosts this site and project docs."
+  },
+  {
+    "name": "Raspberry Pi",
+    "ring": "use",
+    "quadrant": "platforms",
+    "isNew": "TRUE",
+    "description": "Single-board Linux computers."
+  },
+  {
+    "name": "Dev Containers",
+    "ring": "learn",
+    "quadrant": "platforms",
+    "isNew": "TRUE",
+    "description": "Container-defined development environments for VS Code and Codespaces."
+  },
+  {
+    "name": "Google Maps Platform",
+    "ring": "learn",
+    "quadrant": "platforms",
+    "isNew": "TRUE",
+    "description": "Maps APIs."
+  },
+  {
+    "name": "CI/CD",
+    "ring": "use",
+    "quadrant": "techniques",
+    "isNew": "TRUE",
+    "description": "Every change is built, tested and checked automatically; releases and deploys are automated."
+  },
+  {
+    "name": "Software supply-chain security",
+    "ring": "use",
+    "quadrant": "techniques",
+    "isNew": "TRUE",
+    "description": "Pinned dependencies, SBOMs, vulnerability scans and OpenSSF Best Practices and Baseline."
+  },
+  {
+    "name": "Static analysis",
+    "ring": "use",
+    "quadrant": "techniques",
+    "isNew": "TRUE",
+    "description": "Find bugs before running the code, with compiler warnings, linters and analyzers."
+  },
+  {
+    "name": "Secret scanning",
+    "ring": "use",
+    "quadrant": "techniques",
+    "isNew": "TRUE",
+    "description": "Keep credentials out of git, before commit and in CI."
+  },
+  {
+    "name": "Code coverage",
+    "ring": "use",
+    "quadrant": "techniques",
+    "isNew": "TRUE",
+    "description": "Measure which code the tests exercise, and track it in CI."
+  },
+  {
+    "name": "Conventional Commits",
+    "ring": "use",
+    "quadrant": "techniques",
+    "isNew": "TRUE",
+    "description": "Structured commit messages, enforced by a pre-commit hook."
+  },
+  {
+    "name": "Docs as code",
+    "ring": "use",
+    "quadrant": "techniques",
+    "isNew": "TRUE",
+    "description": "Documentation in the repository, reviewed and published like code."
+  },
+  {
+    "name": "Cross-compilation",
+    "ring": "use",
+    "quadrant": "techniques",
+    "isNew": "TRUE",
+    "description": "Build for ARM targets on an x86 host, with toolchain files and emulated tests."
+  },
+  {
+    "name": "AI-assisted development",
+    "ring": "use",
+    "quadrant": "techniques",
+    "isNew": "TRUE",
+    "description": "Coding with AI agents: instructions files, custom agents and AI code review."
+  },
+  {
+    "name": "Progressive web apps",
+    "ring": "learn",
+    "quadrant": "techniques",
+    "isNew": "TRUE",
+    "description": "Websites that install and work offline like apps."
+  },
+  {
+    "name": "Serverless functions",
+    "ring": "learn",
+    "quadrant": "techniques",
+    "isNew": "TRUE",
+    "description": "Small backend endpoints without servers to run, e.g. Vercel functions."
+  },
+  {
+    "name": "Internationalization",
+    "ring": "learn",
+    "quadrant": "techniques",
+    "isNew": "TRUE",
+    "description": "Content and UI in several languages."
+  },
+  {
+    "name": "Fixed-point arithmetic",
+    "ring": "learn",
+    "quadrant": "techniques",
+    "isNew": "TRUE",
+    "description": "Fractional math on integers, for hardware without an FPU; explored in thefblas."
+  },
+  {
+    "name": "HTMX",
+    "ring": "evaluate",
+    "quadrant": "languages & frameworks",
+    "isNew": "TRUE",
+    "description": "Dynamic web pages from HTML attributes, with little JavaScript."
+  },
+  {
+    "name": "Jinja2",
+    "ring": "learn",
+    "quadrant": "languages & frameworks",
+    "isNew": "TRUE",
+    "description": "Python templating engine for HTML and text."
+  },
+  {
+    "name": "FreeRTOS",
+    "ring": "use",
+    "quadrant": "languages & frameworks",
+    "isNew": "TRUE",
+    "description": "Real-time operating system kernel for microcontrollers."
+  },
+  {
+    "name": "tmux",
+    "ring": "use",
+    "quadrant": "tools",
+    "isNew": "TRUE",
+    "description": "Terminal multiplexer: sessions, windows and panes in one terminal."
+  },
+  {
+    "name": "nano",
+    "ring": "use",
+    "quadrant": "tools",
+    "isNew": "TRUE",
+    "description": "Simple terminal text editor."
+  },
+  {
+    "name": "GDB",
+    "ring": "use",
+    "quadrant": "tools",
+    "isNew": "TRUE",
+    "description": "The GNU debugger."
+  },
+  {
+    "name": "Sanitizers (ASan, UBSan)",
+    "ring": "use",
+    "quadrant": "tools",
+    "isNew": "TRUE",
+    "description": "Compiler instrumentation that catches memory errors and undefined behavior at run time."
+  },
+  {
+    "name": "Docker Compose",
+    "ring": "use",
+    "quadrant": "tools",
+    "isNew": "TRUE",
+    "description": "Runs multi-container setups, e.g. an app with its database, from one file."
+  },
+  {
+    "name": "Jupyter",
+    "ring": "use",
+    "quadrant": "tools",
+    "isNew": "TRUE",
+    "description": "Notebooks that mix code, results and notes."
+  },
+  {
+    "name": "STM32CubeIDE",
+    "ring": "use",
+    "quadrant": "tools",
+    "isNew": "TRUE",
+    "description": "ST's Eclipse-based IDE for STM32 microcontrollers."
+  },
+  {
+    "name": "STM32",
+    "ring": "use",
+    "quadrant": "platforms",
+    "isNew": "TRUE",
+    "description": "ST's family of ARM Cortex-M microcontrollers."
+  },
+  {
+    "name": "Reproducible builds",
+    "ring": "use",
+    "quadrant": "techniques",
+    "isNew": "TRUE",
+    "description": "The same source always builds to bit-identical binaries, e.g. with SOURCE_DATE_EPOCH."
+  },
+  {
+    "name": "Machine learning",
+    "ring": "learn",
+    "quadrant": "techniques",
+    "isNew": "TRUE",
+    "description": "Regression, classification and recommenders, learned from data."
+  },
+  {
+    "name": "API-first design",
+    "ring": "learn",
+    "quadrant": "techniques",
+    "isNew": "TRUE",
+    "description": "Design the API first; the UI and clients are built on it."
   }
 ]
