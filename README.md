@@ -4,22 +4,24 @@ Source of <https://thekyria.com>.
 
 - `site/` — static site content, deployed to GitHub Pages by `.github/workflows/pages.yaml` on every push to `main`.
 - `cv/` — CV source (`thekyria_CV.yaml`), rendered to PDF with [RenderCV](https://github.com/rendercv/rendercv). The PDF of the latest release (see [Releasing a CV version](#releasing-a-cv-version)) is published at <https://thekyria.com/thekyria_CV.pdf>.
-- `radar/` — tech radar data (`tech_radar.json`) in [build-your-own-radar](https://github.com/thoughtworks/build-your-own-radar) format. Published at <https://thekyria.com/tech_radar.json> and rendered via [radar.thoughtworks.com](https://radar.thoughtworks.com/?documentId=https%3A%2F%2Fthekyria.com%2Ftech_radar.json). See `radar/README.md`. Previously its own repository, `thekyria/tech_radar`.
+- `radar/` — tech radar data (`tech_radar.json`) in [build-your-own-radar](https://github.com/thoughtworks/build-your-own-radar) format. Published at <https://thekyria.com/tech_radar.json> and rendered by a self-hosted build of BYOR at <https://thekyria.com/radar/?documentId=https%3A%2F%2Fthekyria.com%2Ftech_radar.json>. See `radar/README.md`. Previously its own repository, `thekyria/tech_radar`.
 
 The CV setup is based on <https://github.com/sinaatalay/rendercv-pipeline> (see `cv/LICENSE`) and was previously its own repository, `thekyria/rendercv-pipeline`.
 
 ## Dependencies
 
-The site itself is plain HTML/CSS with no scripts, frameworks or CDN assets; its fonts are vendored.
+The home page is plain HTML/CSS with no scripts, frameworks or CDN assets; its fonts are vendored. The tech radar under `/radar/` is a JavaScript app: [Build Your Own Radar](https://github.com/thoughtworks/build-your-own-radar), built from source on every deploy by `.github/workflows/byor.yaml`. It loads fonts from Google Fonts and rsms.me; its analytics stay off, since no IDs are set at build time.
 
 | Dependency | Version | Scope | Declared in |
 | --- | --- | --- | --- |
 | [RenderCV](https://github.com/rendercv/rendercv) (`rendercv[full]`) | 2.8 | Build only (CV PDF) | `cv/requirements.txt` |
 | Python | 3.13 | Build only (RenderCV, `radar/check.py`) | `.python-version` |
+| [Build Your Own Radar](https://github.com/thoughtworks/build-your-own-radar) (AGPL-3.0) | 1.2.1 | Site, built from source under `/radar/` | `BYOR_REF` in `.github/workflows/byor.yaml` |
+| Node.js | BYOR's `.nvmrc` | Build only (BYOR) | BYOR's `.nvmrc` |
 | [GFS Didot](https://www.greekfontsociety-gfs.gr/) font | — | Site, vendored | `site/fonts/` (`OFL.txt`) |
 | [Simple Icons](https://simpleicons.org) brand icons | 13.21.0 | Site, inlined SVG | `site/index.html` |
 
-GitHub Actions used by the workflows are kept up to date by Dependabot (`.github/dependabot.yml`), as is `cv/requirements.txt`.
+GitHub Actions used by the workflows are kept up to date by Dependabot (`.github/dependabot.yml`), as is `cv/requirements.txt`. BYOR is pinned to a commit and bumped by hand: set `BYOR_REF` to the commit of a newer [release](https://github.com/thoughtworks/build-your-own-radar/releases) and check that the two source patches in `byor.yaml` still apply (the workflow fails if they don't).
 
 ## Subprojects
 
@@ -95,4 +97,4 @@ The release pipeline (`.github/workflows/cv-release.yaml`) then renders the PDF,
 
 ## License
 
-[MIT](LICENSE), except for third-party parts under their own licenses: the CV setup derived from rendercv-pipeline (`cv/LICENSE`, MIT), the GFS Didot font (`site/fonts/OFL.txt`, SIL OFL 1.1) and the Simple Icons brand icons (CC0).
+[MIT](LICENSE), except for third-party parts under their own licenses: the CV setup derived from rendercv-pipeline (`cv/LICENSE`, MIT), the GFS Didot font (`site/fonts/OFL.txt`, SIL OFL 1.1), the Simple Icons brand icons (CC0) and the tech radar app, built from [Build Your Own Radar](https://github.com/thoughtworks/build-your-own-radar) (AGPL-3.0) with the source changes in `.github/workflows/byor.yaml`.

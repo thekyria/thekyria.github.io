@@ -22,9 +22,13 @@ acknowledgement within 14 days** of receiving a report. There are no guaranteed 
 
 ## Scope
 
-The site is static HTML/CSS served by GitHub Pages, with no scripts, forms, cookies or
-server-side code. In scope: the content of this repository and its GitHub Actions workflows.
-Out of scope: GitHub Pages itself and third-party sites linked from the site.
+The site is static and served by GitHub Pages, with no cookies or server-side code. The home
+page is plain HTML/CSS with no scripts or forms. The tech radar under `/radar/` is a client-side
+JavaScript app built from [Build Your Own Radar](https://github.com/thoughtworks/build-your-own-radar);
+it loads fonts from Google Fonts and rsms.me, and its landing page has a form that loads a radar
+from a URL the visitor enters. In scope: the content of this repository, its GitHub Actions
+workflows and how they build the radar app. Out of scope: GitHub Pages itself, vulnerabilities in
+Build Your Own Radar itself (report those upstream) and third-party sites linked from the site.
 
 ## Security Measures
 

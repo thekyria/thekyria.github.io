@@ -18,5 +18,5 @@ instead.
    scan for secrets (gitleaks) and reject binary files other than the site's images, icons and
    fonts. To run them on demand: `pre-commit run --all-files`.
 4. If you touch `radar/tech_radar.json`, run `python3 radar/check.py`.
-5. Open a pull request against `main`. CI renders the CV, validates the tech radar, scans for
+5. Open a pull request against `main`. CI renders the CV, validates and builds the tech radar, scans for
    secrets and checks for binary files.

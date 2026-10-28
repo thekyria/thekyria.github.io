@@ -16,7 +16,12 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  byor:
+    name: Build tech radar
+    uses: ./.github/workflows/byor.yaml
+
   build:
+    needs: byor
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
@@ -26,8 +31,13 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: gh release download --repo "${GITHUB_REPOSITORY}" --pattern thekyria_CV.pdf --dir site
+      - name: Download the tech radar app into the site
+        uses: actions/download-artifact@v8
+        with:
+          name: radar-site
+          path: site/radar
       - name: Copy tech radar data into the site
-        # Rendered by radar.thoughtworks.com, which fetches it from the published site
+        # Fetched by the radar app at /radar/ from the published site
         run: cp radar/tech_radar.json site/
       - name: Stamp the deployed commit into the footer
         # The site is deployed continuously, so the deployed git commit acts as the version,

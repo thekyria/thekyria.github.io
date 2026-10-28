@@ -1,0 +1,62 @@
+name: Build tech radar
+
+on:
+  workflow_call: # reused by pages.yaml and pr.yaml
+
+permissions:
+  contents: read
+
+env:
+  # Build Your Own Radar v1.2.1. Not covered by Dependabot: bump by hand (see README.md)
+  BYOR_REF: 3379de7db36ce86af7b2607429be0b5f888c8120
+
+jobs:
+  byor:
+    name: Build BYOR
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - name: Checkout Build Your Own Radar
+        uses: actions/checkout@v7
+        with:
+          repository: thoughtworks/build-your-own-radar
+          ref: ${{ env.BYOR_REF }}
+          path: build/byor
+      - uses: actions/setup-node@v6
+        with:
+          node-version-file: build/byor/.nvmrc
+          cache: npm
+          cache-dependency-path: build/byor/package-lock.json
+      - name: Install dependencies
+        # The build needs no install scripts, so third-party ones are not run
+        working-directory: build/byor
+        run: npm ci --ignore-scripts --no-audit --no-fund
+      - name: Serve the images from /radar/images/
+        # BYOR refers to its images as /images/..., which only works when served from the domain root
+        working-directory: build/byor
+        run: |
+          files=$(grep -rlE "[\"'(\`]/images/" src)
+          sed -i -E "s#([\"'(\`])/images/#\1/radar/images/#g" ${files}
+          ! grep -rqE "[\"'(\`]/images/" src
+      - name: Keep the hold ring
+        # BYOR renames a "hold" ring to "Caution", which then matches none of our rings and drops its blips
+        working-directory: build/byor
+        run: |
+          sed -i 's/normalizeRingNameHoldToCaution: true/normalizeRingNameHoldToCaution: false/' src/config.js
+          ! grep -q 'normalizeRingNameHoldToCaution: true' src/config.js
+      - name: Build
+        # BYOR bakes the rings in at build time; take them from radar/env.list, as the local Docker run does
+        working-directory: build/byor
+        env:
+          ASSET_PATH: /radar/
+        run: |
+          RINGS="$(sed -n 's/^RINGS=//p' "${GITHUB_WORKSPACE}/radar/env.list")"
+          test -n "${RINGS}"
+          export RINGS
+          npm run build:prod
+      - name: Upload the radar as an artifact
+        uses: actions/upload-artifact@v7
+        with:
+          name: radar-site
+          path: build/byor/dist
+          if-no-files-found: error

@@ -11,6 +11,10 @@ jobs:
     name: RenderCV
     uses: ./.github/workflows/rendercv.yaml
 
+  byor:
+    name: Build tech radar
+    uses: ./.github/workflows/byor.yaml
+
   radar:
     name: Check tech radar
     runs-on: ubuntu-latest
