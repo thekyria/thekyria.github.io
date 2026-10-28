@@ -3,7 +3,7 @@
 Source of <https://thekyria.com>.
 
 - `site/` — static site content, deployed to GitHub Pages by `.github/workflows/pages.yaml` on every push to `main`.
-- `cv/` — CV source (`thekyria_CV.yaml`), rendered to PDF with [RenderCV](https://github.com/rendercv/rendercv). The PDF is published at <https://thekyria.com/thekyria_CV.pdf>.
+- `cv/` — CV source (`thekyria_CV.yaml`), rendered to PDF with [RenderCV](https://github.com/rendercv/rendercv). The PDF of the latest release (see [Releasing a CV version](#releasing-a-cv-version)) is published at <https://thekyria.com/thekyria_CV.pdf>.
 - `radar/` — tech radar data (`tech_radar.json`) in [build-your-own-radar](https://github.com/thoughtworks/build-your-own-radar) format. Published at <https://thekyria.com/tech_radar.json> and rendered via [radar.thoughtworks.com](https://radar.thoughtworks.com/?documentId=https%3A%2F%2Fthekyria.com%2Ftech_radar.json). See `radar/README.md`. Previously its own repository, `thekyria/tech_radar`.
 
 The CV setup is based on <https://github.com/sinaatalay/rendercv-pipeline> (see `cv/LICENSE`) and was previously its own repository, `thekyria/rendercv-pipeline`.
@@ -77,12 +77,21 @@ rm -rf cv/rendercv_output build
 
 ## Releasing a CV version
 
-The release pipeline (`.github/workflows/release.yaml`) triggers upon pushing a tag and attaches the PDF to a GitHub release.
+CV edits merged to `main` are not published on their own: the site always serves the PDF of the latest GitHub release. To publish the CV as it is on `main`, tag it with a date-based version and push the tag.
 
 ```bash
-git tag v2026.04.30
-git push origin --tags
+git checkout main && git pull
 ```
+
+```bash
+git tag v2026.10.28
+```
+
+```bash
+git push origin v2026.10.28
+```
+
+The release pipeline (`.github/workflows/release.yaml`) then renders the PDF, attaches it to a GitHub release marked as latest, and redeploys the site (`.github/workflows/pages.yaml`), which downloads that PDF. For a second release on the same day, add a suffix, e.g. `v2026.10.28.1`.
 
 ## License
 

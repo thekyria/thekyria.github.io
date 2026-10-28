@@ -6,7 +6,7 @@ on:
       - "v*" # Version tags, e.g. v2026.04.30
 
 permissions:
-  contents: write
+  contents: read
 
 jobs:
   rendercv:
@@ -16,6 +16,8 @@ jobs:
   release:
     needs: rendercv
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - name: Checkout
         uses: actions/checkout@v7
@@ -30,3 +32,17 @@ jobs:
           files: build/thekyria_CV.pdf
           generate_release_notes: true
           make_latest: true
+
+  deploy-site:
+    name: Deploy the site with the new CV
+    needs: release
+    runs-on: ubuntu-latest
+    permissions:
+      actions: write
+    steps:
+      - name: Run the site deployment on main
+        # Dispatched rather than called, so that it runs on main, which the github-pages
+        # environment allows to deploy, and picks up the release just made
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run pages.yaml --repo "${GITHUB_REPOSITORY}" --ref main
