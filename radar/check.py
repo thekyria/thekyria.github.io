@@ -5,7 +5,7 @@ import sys
 from collections import Counter
 from pathlib import Path
 
-RINGS = {"adopt", "trial", "assess", "hold"}  # the hosted BYOR drops blips in any other ring
+RINGS = {"use", "learn", "evaluate", "hold"}
 QUADRANTS = {"tools", "languages & frameworks", "platforms", "techniques"}
 IS_NEW = {"TRUE", "FALSE"}
 FIELDS = {"name", "ring", "quadrant", "isNew", "description"}

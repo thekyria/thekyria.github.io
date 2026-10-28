@@ -1,483 +1,483 @@
 [
   {
     "name": "svn",
-    "ring": "trial",
+    "ring": "learn",
     "quadrant": "tools",
     "isNew": "FALSE",
     "description": ""
   },
   {
     "name": "git",
-    "ring": "adopt",
+    "ring": "use",
     "quadrant": "tools",
     "isNew": "FALSE",
     "description": ""
   },
   {
     "name": "Bazel",
-    "ring": "assess",
+    "ring": "evaluate",
     "quadrant": "languages & frameworks",
     "isNew": "FALSE",
     "description": ""
   },
   {
     "name": "Cisco IOSXE",
-    "ring": "adopt",
+    "ring": "use",
     "quadrant": "platforms",
     "isNew": "FALSE",
     "description": ""
   },
   {
     "name": "DevOps",
-    "ring": "adopt",
+    "ring": "use",
     "quadrant": "techniques",
     "isNew": "FALSE",
     "description": ""
   },
   {
     "name": "ChatGPT",
-    "ring": "adopt",
+    "ring": "use",
     "quadrant": "tools",
     "isNew": "FALSE",
     "description": ""
   },
   {
     "name": "GitHub Copilot",
-    "ring": "adopt",
+    "ring": "use",
     "quadrant": "tools",
     "isNew": "FALSE",
     "description": ""
   },
   {
     "name": "Elastic",
-    "ring": "trial",
+    "ring": "learn",
     "quadrant": "languages & frameworks",
     "isNew": "FALSE",
     "description": ""
   },
   {
     "name": "Discord",
-    "ring": "trial",
+    "ring": "learn",
     "quadrant": "tools",
     "isNew": "FALSE",
     "description": ""
   },
   {
     "name": "Microsoft Teams",
-    "ring": "adopt",
+    "ring": "use",
     "quadrant": "tools",
     "isNew": "FALSE",
     "description": ""
   },
   {
     "name": "Slack",
-    "ring": "adopt",
+    "ring": "use",
     "quadrant": "tools",
     "isNew": "FALSE",
     "description": ""
   },
   {
     "name": "Cisco Webex Teams",
-    "ring": "adopt",
+    "ring": "use",
     "quadrant": "tools",
     "isNew": "FALSE",
     "description": ""
   },
   {
     "name": "Zoom",
-    "ring": "adopt",
+    "ring": "use",
     "quadrant": "tools",
     "isNew": "FALSE",
     "description": ""
   },
   {
     "name": "Trello",
-    "ring": "trial",
+    "ring": "learn",
     "quadrant": "tools",
     "isNew": "FALSE",
     "description": ""
   },
   {
     "name": "Doxygen",
-    "ring": "adopt",
+    "ring": "use",
     "quadrant": "languages & frameworks",
     "isNew": "FALSE",
     "description": ""
   },
   {
     "name": "Markdown",
-    "ring": "adopt",
+    "ring": "use",
     "quadrant": "languages & frameworks",
     "isNew": "FALSE",
     "description": ""
   },
   {
     "name": "Confluence",
-    "ring": "adopt",
+    "ring": "use",
     "quadrant": "tools",
     "isNew": "FALSE",
     "description": ""
   },
   {
     "name": "Jira",
-    "ring": "adopt",
+    "ring": "use",
     "quadrant": "tools",
     "isNew": "FALSE",
     "description": ""
   },
   {
     "name": "CLion",
-    "ring": "adopt",
+    "ring": "use",
     "quadrant": "tools",
     "isNew": "FALSE",
     "description": ""
   },
   {
     "name": "Eclipse",
-    "ring": "trial",
+    "ring": "learn",
     "quadrant": "tools",
     "isNew": "FALSE",
     "description": ""
   },
   {
     "name": "PyCharm",
-    "ring": "adopt",
+    "ring": "use",
     "quadrant": "tools",
     "isNew": "FALSE",
     "description": ""
   },
   {
     "name": "QT Creator",
-    "ring": "adopt",
+    "ring": "use",
     "quadrant": "tools",
     "isNew": "FALSE",
     "description": ""
   },
   {
     "name": "Visual Studio",
-    "ring": "trial",
+    "ring": "learn",
     "quadrant": "tools",
     "isNew": "FALSE",
     "description": ""
   },
   {
     "name": "Visual Studio Code",
-    "ring": "adopt",
+    "ring": "use",
     "quadrant": "tools",
     "isNew": "FALSE",
     "description": ""
   },
   {
     "name": "Unity (C unit testing)",
-    "ring": "trial",
+    "ring": "learn",
     "quadrant": "languages & frameworks",
     "isNew": "FALSE",
     "description": ""
   },
   {
     "name": "Google Test",
-    "ring": "assess",
+    "ring": "evaluate",
     "quadrant": "languages & frameworks",
     "isNew": "FALSE",
     "description": ""
   },
   {
     "name": "Catch2",
-    "ring": "trial",
+    "ring": "learn",
     "quadrant": "languages & frameworks",
     "isNew": "FALSE",
     "description": ""
   },
   {
     "name": "QMake",
-    "ring": "adopt",
+    "ring": "use",
     "quadrant": "languages & frameworks",
     "isNew": "FALSE",
     "description": ""
   },
   {
     "name": "LLVM Clang",
-    "ring": "adopt",
+    "ring": "use",
     "quadrant": "tools",
     "isNew": "FALSE",
     "description": ""
   },
   {
     "name": "IAR",
-    "ring": "adopt",
+    "ring": "use",
     "quadrant": "tools",
     "isNew": "FALSE",
     "description": ""
   },
   {
     "name": "GNU GCC",
-    "ring": "adopt",
+    "ring": "use",
     "quadrant": "tools",
     "isNew": "FALSE",
     "description": ""
   },
   {
     "name": "Yarn",
-    "ring": "trial",
+    "ring": "learn",
     "quadrant": "tools",
     "isNew": "FALSE",
     "description": ""
   },
   {
     "name": "Ansible",
-    "ring": "adopt",
+    "ring": "use",
     "quadrant": "tools",
     "isNew": "FALSE",
     "description": ""
   },
   {
     "name": "Make",
-    "ring": "adopt",
+    "ring": "use",
     "quadrant": "languages & frameworks",
     "isNew": "FALSE",
     "description": ""
   },
   {
     "name": "CMake",
-    "ring": "adopt",
+    "ring": "use",
     "quadrant": "languages & frameworks",
     "isNew": "FALSE",
     "description": ""
   },
   {
     "name": "Chocolatey",
-    "ring": "adopt",
+    "ring": "use",
     "quadrant": "tools",
     "isNew": "FALSE",
     "description": ""
   },
   {
     "name": "pip",
-    "ring": "adopt",
+    "ring": "use",
     "quadrant": "tools",
     "isNew": "FALSE",
     "description": ""
   },
   {
     "name": "npm",
-    "ring": "trial",
+    "ring": "learn",
     "quadrant": "tools",
     "isNew": "FALSE",
     "description": ""
   },
   {
     "name": "Qt",
-    "ring": "adopt",
+    "ring": "use",
     "quadrant": "languages & frameworks",
     "isNew": "FALSE",
     "description": ""
   },
   {
     "name": "Pandas",
-    "ring": "assess",
+    "ring": "evaluate",
     "quadrant": "languages & frameworks",
     "isNew": "FALSE",
     "description": ""
   },
   {
     "name": "NumPy",
-    "ring": "trial",
+    "ring": "learn",
     "quadrant": "languages & frameworks",
     "isNew": "FALSE",
     "description": ""
   },
   {
     "name": "FastAPI",
-    "ring": "trial",
+    "ring": "learn",
     "quadrant": "languages & frameworks",
     "isNew": "FALSE",
     "description": ""
   },
   {
     "name": "Django",
-    "ring": "trial",
+    "ring": "learn",
     "quadrant": "languages & frameworks",
     "isNew": "FALSE",
     "description": ""
   },
   {
     "name": "Flask",
-    "ring": "trial",
+    "ring": "learn",
     "quadrant": "languages & frameworks",
     "isNew": "FALSE",
     "description": ""
   },  
   {
     "name": "Express.js",
-    "ring": "trial",
+    "ring": "learn",
     "quadrant": "languages & frameworks",
     "isNew": "FALSE",
     "description": ""
   },
   {
     "name": "jQuery",
-    "ring": "trial",
+    "ring": "learn",
     "quadrant": "languages & frameworks",
     "isNew": "FALSE",
     "description": ""
   },
   {
     "name": "React",
-    "ring": "trial",
+    "ring": "learn",
     "quadrant": "languages & frameworks",
     "isNew": "FALSE",
     "description": ""
   },
   {
     "name": "Node.js",
-    "ring": "trial",
+    "ring": "learn",
     "quadrant": "languages & frameworks",
     "isNew": "FALSE",
     "description": ""
   },
   {
     "name": "Azure DevOps",
-    "ring": "adopt",
+    "ring": "use",
     "quadrant": "platforms",
     "isNew": "FALSE",
     "description": ""
   },
   {
     "name": "GitLab",
-    "ring": "trial",
+    "ring": "learn",
     "quadrant": "platforms",
     "isNew": "FALSE",
     "description": ""
   },
   {
     "name": "Bitbucket",
-    "ring": "adopt",
+    "ring": "use",
     "quadrant": "platforms",
     "isNew": "FALSE",
     "description": ""
   },
   {
     "name": "GitHub",
-    "ring": "adopt",
+    "ring": "use",
     "quadrant": "platforms",
     "isNew": "FALSE",
     "description": ""
   },
   {
     "name": "CodeSandbox",
-    "ring": "trial",
+    "ring": "learn",
     "quadrant": "platforms",
     "isNew": "FALSE",
     "description": ""
   },
   {
     "name": "Kubernetes",
-    "ring": "trial",
+    "ring": "learn",
     "quadrant": "platforms",
     "isNew": "FALSE",
     "description": ""
   },
   {
     "name": "Docker",
-    "ring": "adopt",
+    "ring": "use",
     "quadrant": "platforms",
     "isNew": "FALSE",
     "description": ""
   },
   {
     "name": "Linux",
-    "ring": "adopt",
+    "ring": "use",
     "quadrant": "platforms",
     "isNew": "FALSE",
     "description": ""
   },
   {
     "name": "Windows",
-    "ring": "adopt",
+    "ring": "use",
     "quadrant": "platforms",
     "isNew": "FALSE",
     "description": ""
   },
   {
     "name": "WSL",
-    "ring": "adopt",
+    "ring": "use",
     "quadrant": "platforms",
     "isNew": "FALSE",
     "description": ""
   },
   {
     "name": "AWS",
-    "ring": "assess",
+    "ring": "evaluate",
     "quadrant": "platforms",
     "isNew": "FALSE",
     "description": ""
   },
   {
     "name": "Linode",
-    "ring": "adopt",
+    "ring": "use",
     "quadrant": "platforms",
     "isNew": "FALSE",
     "description": ""
   },
   {
     "name": "Vercel",
-    "ring": "adopt",
+    "ring": "use",
     "quadrant": "platforms",
     "isNew": "FALSE",
     "description": ""
   },
   {
     "name": "VMWare",
-    "ring": "trial",
+    "ring": "learn",
     "quadrant": "platforms",
     "isNew": "FALSE",
     "description": ""
   },
   {
     "name": "Azure",
-    "ring": "adopt",
+    "ring": "use",
     "quadrant": "platforms",
     "isNew": "FALSE",
     "description": ""
   },
   {
     "name": "MariaDB",
-    "ring": "adopt",
+    "ring": "use",
     "quadrant": "languages & frameworks",
     "isNew": "FALSE",
     "description": ""
   },
   {
     "name": "PostgreSQL",
-    "ring": "adopt",
+    "ring": "use",
     "quadrant": "languages & frameworks",
     "isNew": "FALSE",
     "description": ""
   },
   {
     "name": "Groovy",
-    "ring": "trial",
+    "ring": "learn",
     "quadrant": "languages & frameworks",
     "isNew": "FALSE",
     "description": ""
   },
   {
     "name": "Assembly (x86)",
-    "ring": "trial",
+    "ring": "learn",
     "quadrant": "languages & frameworks",
     "isNew": "FALSE",
     "description": ""
   },
   {
     "name": "Assembly (ARM)",
-    "ring": "trial",
+    "ring": "learn",
     "quadrant": "languages & frameworks",
     "isNew": "FALSE",
     "description": ""
   },
   {
     "name": "Rust",
-    "ring": "assess",
+    "ring": "evaluate",
     "quadrant": "languages & frameworks",
     "isNew": "FALSE",
     "description": ""
@@ -498,7 +498,7 @@
   },
   {
     "name": "Go",
-    "ring": "assess",
+    "ring": "evaluate",
     "quadrant": "languages & frameworks",
     "isNew": "FALSE",
     "description": ""
@@ -512,84 +512,84 @@
   },
   {
     "name": "Windows CMD",
-    "ring": "trial",
+    "ring": "learn",
     "quadrant": "languages & frameworks",
     "isNew": "FALSE",
     "description": ""
   },
   {
     "name": "bash",
-    "ring": "adopt",
+    "ring": "use",
     "quadrant": "languages & frameworks",
     "isNew": "FALSE",
     "description": ""
   },
   {
     "name": "SQL",
-    "ring": "adopt",
+    "ring": "use",
     "quadrant": "languages & frameworks",
     "isNew": "FALSE",
     "description": ""
   },
   {
     "name": "CSS",
-    "ring": "trial",
+    "ring": "learn",
     "quadrant": "languages & frameworks",
     "isNew": "FALSE",
     "description": ""
   },
   {
     "name": "HTML",
-    "ring": "adopt",
+    "ring": "use",
     "quadrant": "languages & frameworks",
     "isNew": "FALSE",
     "description": ""
   },
   {
     "name": "Python",
-    "ring": "trial",
+    "ring": "learn",
     "quadrant": "languages & frameworks",
     "isNew": "FALSE",
     "description": ""
   },
   {
     "name": "JavaScript",
-    "ring": "trial",
+    "ring": "learn",
     "quadrant": "languages & frameworks",
     "isNew": "FALSE",
     "description": ""
   },
   {
     "name": "Java",
-    "ring": "trial",
+    "ring": "learn",
     "quadrant": "languages & frameworks",
     "isNew": "FALSE",
     "description": ""
   },
   {
     "name": "PHP",
-    "ring": "trial",
+    "ring": "learn",
     "quadrant": "languages & frameworks",
     "isNew": "FALSE",
     "description": ""
   },
   {
     "name": "MATLAB",
-    "ring": "adopt",
+    "ring": "use",
     "quadrant": "languages & frameworks",
     "isNew": "FALSE",
     "description": ""
   },
   {
     "name": "C++",
-    "ring": "adopt",
+    "ring": "use",
     "quadrant": "languages & frameworks",
     "isNew": "FALSE",
     "description": ""
   },
   {
     "name": "C",
-    "ring": "adopt",
+    "ring": "use",
     "quadrant": "languages & frameworks",
     "isNew": "FALSE",
     "description": ""

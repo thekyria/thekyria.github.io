@@ -33,7 +33,7 @@ Notes:
 ## json options
 
 - `name`: any string
-- `ring`: `adopt`, `trial`, `assess`, `hold` (the fixed rings of the hosted BYOR, which shows `hold` as "Caution"; blips in any other ring are silently dropped)
+- `ring`: `use`, `learn`, `evaluate`, `hold`
 - `quadrant`: `tools`, `languages & frameworks`, `platforms`, `techniques`
 - `isNew`: `TRUE`, `FALSE`
 - `description`: any string
