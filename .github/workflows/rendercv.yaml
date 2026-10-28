@@ -1,7 +1,7 @@
 name: Render CV
 
 on:
-  workflow_call: # reused by release.yaml and pr.yaml
+  workflow_call: # reused by cv-release.yaml and pr.yaml
 
 permissions:
   contents: read

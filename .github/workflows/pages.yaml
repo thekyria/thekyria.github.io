@@ -22,7 +22,7 @@ jobs:
       - uses: actions/checkout@v7
       - name: Download the released CV PDF into the site
         # The site serves the CV of the latest GitHub release, not the one on main, so CV edits
-        # stay unpublished until they are released (see release.yaml)
+        # stay unpublished until they are released (see cv-release.yaml)
         env:
           GH_TOKEN: ${{ github.token }}
         run: gh release download --repo "${GITHUB_REPOSITORY}" --pattern thekyria_CV.pdf --dir site

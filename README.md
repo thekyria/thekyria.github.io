@@ -91,7 +91,7 @@ git tag v2026.10.28
 git push origin v2026.10.28
 ```
 
-The release pipeline (`.github/workflows/release.yaml`) then renders the PDF, attaches it to a GitHub release marked as latest, and redeploys the site (`.github/workflows/pages.yaml`), which downloads that PDF. For a second release on the same day, add a suffix, e.g. `v2026.10.28.1`.
+The release pipeline (`.github/workflows/cv-release.yaml`) then renders the PDF, attaches it to a GitHub release marked as latest, and redeploys the site (`.github/workflows/pages.yaml`), which downloads that PDF. For a second release on the same day, add a suffix, e.g. `v2026.10.28.1`.
 
 ## License
 
