@@ -20,12 +20,15 @@ python3 radar/check.py
 
 git-bash example on windows, run from within `radar/`, please adapt accordingly.
 
+The image is pinned to the BYOR version the site is built from (`BYOR_REF` in `.github/workflows/byor.yaml`, currently v1.2.1). The container builds BYOR when it starts, with the rings from `env.list`; the command turns off BYOR's renaming of `hold` to "Caution" first, as the site build does, so the `hold` blips (Perl, Ruby, PowerShell) are kept.
+
 ```bash
 # fetch the image - only once
-docker pull wwwthoughtworks/build-your-own-radar
+docker pull wwwthoughtworks/build-your-own-radar:v1.2.1
 
-# start the localhost BYOR server
-docker run --rm -p 8080:80 --env-file env.list -v /${PWD}:/opt/build-your-own-radar/files wwwthoughtworks/build-your-own-radar:latest
+# start the localhost BYOR server (the build takes a minute or so)
+docker run --rm -p 8080:80 --env-file env.list -v /${PWD}:/opt/build-your-own-radar/files wwwthoughtworks/build-your-own-radar:v1.2.1 \
+  sh -c "sed -i 's/normalizeRingNameHoldToCaution: true/normalizeRingNameHoldToCaution: false/' src/config.js && ./build_and_start_nginx.sh"
 
 # hit the page pointing to the self-hosted .json
 start http://localhost:8080/?documentId=http%3A%2F%2Flocalhost%3A8080%2Ffiles%2Ftech_radar.json
@@ -35,8 +38,9 @@ Notes:
 
 - "/" in the `-v` argument is due to a [mingw bug](https://stackoverflow.com/questions/50608301/docker-mounted-volume-adds-c-to-end-of-windows-path-when-translating-from-linux)
 - Beware of escaping in `env.file`: <https://stackoverflow.com/a/30494145/10955074>
-
-The Docker image's `:latest` includes the `hold` → "Caution" renaming, so a local run drops the `hold` blips (Perl, Ruby, PowerShell) that the published radar shows.
+- On start, the image copies its own sample radars into the mounted directory; `.gitignore` keeps them out of git.
+- Locally BYOR is served from the root, so it needs no image path changes, unlike the site's `/radar/`.
+- When bumping `BYOR_REF`, use the image tag of the same release here.
 
 ## json options
 
