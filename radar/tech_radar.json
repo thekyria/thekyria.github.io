@@ -599,7 +599,7 @@
     "ring": "use",
     "quadrant": "tools",
     "isNew": "TRUE",
-    "description": "Anthropic's agentic coding tool, for code changes, reviews and CI; used on this site, theblas and thefblas."
+    "description": "Anthropic's agentic coding tool, for code changes, reviews and CI."
   },
   {
     "name": "Claude",
@@ -669,7 +669,7 @@
     "ring": "use",
     "quadrant": "tools",
     "isNew": "TRUE",
-    "description": "Hosted code quality and security analysis with quality gates; used on theblas."
+    "description": "Hosted code quality and security analysis with quality gates."
   },
   {
     "name": "Grype",
@@ -687,7 +687,7 @@
   },
   {
     "name": "lcov / gcovr",
-    "ring": "use",
+    "ring": "learn",
     "quadrant": "tools",
     "isNew": "TRUE",
     "description": "Code coverage reports from gcov data."
@@ -742,20 +742,6 @@
     "description": "Python testing framework."
   },
   {
-    "name": "Gradle",
-    "ring": "learn",
-    "quadrant": "tools",
-    "isNew": "TRUE",
-    "description": "Build tool for JVM and Android projects."
-  },
-  {
-    "name": "Jekyll",
-    "ring": "learn",
-    "quadrant": "tools",
-    "isNew": "TRUE",
-    "description": "Static site generator; builds the bdate docs."
-  },
-  {
     "name": "RenderCV",
     "ring": "use",
     "quadrant": "tools",
@@ -798,18 +784,11 @@
     "description": "Modern terminal for Windows, with tabs for shells and WSL."
   },
   {
-    "name": "Kotlin",
-    "ring": "learn",
-    "quadrant": "languages & frameworks",
-    "isNew": "TRUE",
-    "description": "Modern JVM language for Android; used in the bdate Android app."
-  },
-  {
     "name": "Protocol Buffers",
     "ring": "learn",
     "quadrant": "languages & frameworks",
     "isNew": "TRUE",
-    "description": "Google's language-neutral serialization format; explored in pb_tutorial_py."
+    "description": "Google's language-neutral serialization format."
   },
   {
     "name": "Boost",
@@ -833,13 +812,6 @@
     "description": "Static site hosting from a repository; hosts this site and project docs."
   },
   {
-    "name": "Android",
-    "ring": "learn",
-    "quadrant": "platforms",
-    "isNew": "TRUE",
-    "description": "Mobile operating system; target of the bdate app."
-  },
-  {
     "name": "Raspberry Pi",
     "ring": "use",
     "quadrant": "platforms",
@@ -848,7 +820,7 @@
   },
   {
     "name": "Dev Containers",
-    "ring": "use",
+    "ring": "learn",
     "quadrant": "platforms",
     "isNew": "TRUE",
     "description": "Container-defined development environments for VS Code and Codespaces."
@@ -858,7 +830,7 @@
     "ring": "learn",
     "quadrant": "platforms",
     "isNew": "TRUE",
-    "description": "Maps APIs; used in the hagioi saints map."
+    "description": "Maps APIs."
   },
   {
     "name": "CI/CD",
@@ -924,18 +896,11 @@
     "description": "Coding with AI agents: instructions files, custom agents and AI code review."
   },
   {
-    "name": "Release by git tag",
-    "ring": "use",
-    "quadrant": "techniques",
-    "isNew": "TRUE",
-    "description": "Pushing a version tag builds and publishes a release, like the CV on this site."
-  },
-  {
     "name": "Progressive web apps",
     "ring": "learn",
     "quadrant": "techniques",
     "isNew": "TRUE",
-    "description": "Websites that install and work offline like apps; used in hagioi and bdate."
+    "description": "Websites that install and work offline like apps."
   },
   {
     "name": "Serverless functions",
@@ -959,22 +924,8 @@
     "description": "Fractional math on integers, for hardware without an FPU; explored in thefblas."
   },
   {
-    "name": "SQLAlchemy",
-    "ring": "use",
-    "quadrant": "languages & frameworks",
-    "isNew": "TRUE",
-    "description": "Python SQL toolkit and ORM."
-  },
-  {
-    "name": "Alembic",
-    "ring": "learn",
-    "quadrant": "languages & frameworks",
-    "isNew": "TRUE",
-    "description": "Database schema migrations for SQLAlchemy."
-  },
-  {
     "name": "HTMX",
-    "ring": "learn",
+    "ring": "evaluate",
     "quadrant": "languages & frameworks",
     "isNew": "TRUE",
     "description": "Dynamic web pages from HTML attributes, with little JavaScript."
@@ -987,36 +938,8 @@
     "description": "Python templating engine for HTML and text."
   },
   {
-    "name": "Pydantic",
-    "ring": "learn",
-    "quadrant": "languages & frameworks",
-    "isNew": "TRUE",
-    "description": "Data validation with Python type hints."
-  },
-  {
-    "name": "scikit-learn",
-    "ring": "learn",
-    "quadrant": "languages & frameworks",
-    "isNew": "TRUE",
-    "description": "Classic machine learning in Python."
-  },
-  {
-    "name": "TensorFlow",
-    "ring": "learn",
-    "quadrant": "languages & frameworks",
-    "isNew": "TRUE",
-    "description": "Google's machine learning framework."
-  },
-  {
-    "name": "Matplotlib",
-    "ring": "learn",
-    "quadrant": "languages & frameworks",
-    "isNew": "TRUE",
-    "description": "Plotting and charts in Python."
-  },
-  {
     "name": "FreeRTOS",
-    "ring": "learn",
+    "ring": "use",
     "quadrant": "languages & frameworks",
     "isNew": "TRUE",
     "description": "Real-time operating system kernel for microcontrollers."
@@ -1058,28 +981,28 @@
   },
   {
     "name": "Jupyter",
-    "ring": "learn",
+    "ring": "use",
     "quadrant": "tools",
     "isNew": "TRUE",
     "description": "Notebooks that mix code, results and notes."
   },
   {
     "name": "STM32CubeIDE",
-    "ring": "learn",
+    "ring": "use",
     "quadrant": "tools",
     "isNew": "TRUE",
     "description": "ST's Eclipse-based IDE for STM32 microcontrollers."
   },
   {
     "name": "STM32",
-    "ring": "learn",
+    "ring": "use",
     "quadrant": "platforms",
     "isNew": "TRUE",
     "description": "ST's family of ARM Cortex-M microcontrollers."
   },
   {
     "name": "Reproducible builds",
-    "ring": "learn",
+    "ring": "use",
     "quadrant": "techniques",
     "isNew": "TRUE",
     "description": "The same source always builds to bit-identical binaries, e.g. with SOURCE_DATE_EPOCH."
@@ -1097,12 +1020,5 @@
     "quadrant": "techniques",
     "isNew": "TRUE",
     "description": "Design the API first; the UI and clients are built on it."
-  },
-  {
-    "name": "Database migrations",
-    "ring": "learn",
-    "quadrant": "techniques",
-    "isNew": "TRUE",
-    "description": "Versioned, reviewable schema changes that evolve with the code."
   }
 ]
