@@ -1,0 +1,17 @@
+# https://pre-commit.com - install the hooks with `pre-commit install`
+repos:
+  - repo: local
+    hooks:
+      - id: no-binary-files
+        name: forbid binary files
+        language: fail
+        entry: 'Binary files are not allowed in this repository'
+        types: [binary]
+        # The site's images, icons and fonts are source assets, not build output
+        # (same list as .github/workflows/binary-artifacts.yaml).
+        exclude: ^site/.*\.(png|ico|jpg|otf)$
+  # Secret scanning (OSPS-BR-07.01)
+  - repo: https://github.com/gitleaks/gitleaks
+    rev: v8.28.0
+    hooks:
+      - id: gitleaks
