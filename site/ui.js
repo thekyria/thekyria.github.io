@@ -9,18 +9,19 @@ const still = matchMedia("(prefers-reduced-motion: reduce)").matches;
 const island = (host, element) => createRoot(host).render(element);
 const layer = (parent, className) => parent.appendChild(Object.assign(document.createElement("div"), { className }));
 
-// Aurora behind the main column, in the theworks blues
+// Aurora behind the main column, in the theworks blues; the colours are CSS variables in index.html
+// so they follow the light or dark theme
 const blobs = [
-    { color: "rgba(16, 52, 166, 0.35)", x: 15, y: 20, size: 55 },
-    { color: "rgba(157, 180, 255, 0.35)", x: 85, y: 35, size: 50 },
-    { color: "rgba(16, 52, 166, 0.2)", x: 50, y: 90, size: 60 },
+    { color: "var(--aurora-1)", x: 15, y: 20, size: 60 },
+    { color: "var(--aurora-2)", x: 85, y: 35, size: 55 },
+    { color: "var(--aurora-3)", x: 50, y: 90, size: 65 },
 ];
 island(layer(document.querySelector("main"), "ui-aurora"), h(Aurora, { blobs, static: still }));
 
-// A few faint sparkles drifting up the side panel
+// Sparkles drifting up the side panel
 if (!still) {
     island(layer(document.querySelector(".panel"), "ui-sparkles"),
-        h(FloatingSparkles, { count: 10, glyphs: ["✦", "·"], sizeRange: [6, 12] }));
+        h(FloatingSparkles, { count: 22, glyphs: ["✦", "✧", "·"], sizeRange: [8, 16], durationS: [6, 14] }));
 }
 
 // ASCII rendition of the photo; hovering or focusing the link shows the photo again
@@ -66,13 +67,16 @@ island(portrait, h(AsciiPortrait, { src: photo.src, cols: 56 }));
 
 // The bio streams in token by token. Screen readers get the real paragraph throughout,
 // and once the stream completes the real paragraph, with its links, takes its place.
+// index.html holds the bio back (ui-pending) for at most 3 s; past that, or with reduced motion, it stays as is.
 const bio = document.querySelector(".about p");
-if (!still) {
+const root = document.documentElement;
+if (root.classList.contains("ui-pending")) {
     const stream = Object.assign(document.createElement("div"), { className: "ui-stream" });
     stream.setAttribute("aria-hidden", "true");
     bio.before(stream);
     bio.classList.add("ui-sr-only");
     const done = () => { stream.remove(); bio.classList.remove("ui-sr-only"); };
     const text = bio.textContent.replace(/\s+/g, " ").trim();
-    island(stream, h("p", null, h(TokenStream, { text, speedMs: [8, 25], hideCaret: true, onComplete: done })));
+    island(stream, h("p", null, h(TokenStream, { text, speedMs: [30, 60], onComplete: done })));
+    root.classList.remove("ui-pending");
 }

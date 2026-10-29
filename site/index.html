@@ -51,6 +51,18 @@
     ]
   }
   </script>
+  <script>
+    // Theme: the visitor's pick from the footer toggle, else the system setting
+    try {
+      const theme = localStorage.getItem("theme");
+      if (theme === "light" || theme === "dark") document.documentElement.dataset.theme = theme;
+    } catch {}
+    // Hold the bio back for the streaming in ui.js, but show it after 3 s if that hasn't started
+    if (!matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      document.documentElement.classList.add("ui-pending");
+      setTimeout(() => document.documentElement.classList.remove("ui-pending"), 3000);
+    }
+  </script>
   <!-- performative-ui islands, see ui.js -->
   <script type="importmap">
   {
@@ -70,25 +82,23 @@
     @font-face { font-family: "GFS Didot"; src: url(fonts/GFSDidot-Regular.otf) format("opentype"); font-weight: 400; font-style: normal; font-display: swap; }
     @font-face { font-family: "GFS Didot"; src: url(fonts/GFSDidot-Italic.otf) format("opentype"); font-weight: 400; font-style: italic; font-display: swap; }
     /* Colours from the theworks design system: theworks-blue #1034a6, theworks-azurewhite #f0ffff */
+    /* Light or dark follows the system unless the footer toggle set data-theme */
     :root {
-      --page: #f0ffff;
-      --ink: #1034a6;
-      --link: #1034a6;
-      --link-hover: #0a2275;
-      --rule: rgba(16, 52, 166, 0.25);
+      color-scheme: light dark;
+      --page: light-dark(#f0ffff, #0a1230);
+      --ink: light-dark(#1034a6, #f0ffff);
+      --link: light-dark(#1034a6, #9db4ff);
+      --link-hover: light-dark(#0a2275, #c7d4ff);
+      --rule: light-dark(rgba(16, 52, 166, 0.25), rgba(240, 255, 255, 0.2));
       --panel: #1034a6;
       --panel-ink: #f0ffff;
       --panel-rule: rgba(240, 255, 255, 0.3);
+      --aurora-1: light-dark(rgba(16, 52, 166, 0.45), rgba(90, 130, 255, 0.7));
+      --aurora-2: light-dark(rgba(110, 150, 255, 0.55), rgba(157, 180, 255, 0.5));
+      --aurora-3: light-dark(rgba(16, 52, 166, 0.3), rgba(70, 110, 240, 0.65));
     }
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --page: #0a1230;
-        --ink: #f0ffff;
-        --link: #9db4ff;
-        --link-hover: #c7d4ff;
-        --rule: rgba(240, 255, 255, 0.2);
-      }
-    }
+    :root[data-theme="light"] { color-scheme: light; }
+    :root[data-theme="dark"] { color-scheme: dark; }
     body {
       margin: 0;
       background: var(--page);
@@ -162,10 +172,23 @@
     }
     footer > :not(:first-child)::before { content: "•" / ""; margin-right: 0.5rem; }
     .commit { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+    .theme-toggle {
+      padding: 0;
+      border: 0;
+      background: none;
+      color: var(--link);
+      font: inherit;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+    .theme-toggle:hover { color: var(--link-hover); }
     /* performative-ui islands, see ui.js */
     .panel, main { position: relative; isolation: isolate; overflow: hidden; }
     .ui-aurora, .ui-sparkles { position: absolute; inset: 0; z-index: -1; overflow: hidden; pointer-events: none; }
     .ui-sparkles { z-index: 0; }
+    .ui-sparkles .pui-sparkle-field__item { color: rgba(240, 255, 255, 0.9); text-shadow: 0 0 8px rgba(157, 180, 255, 0.9); }
+    .ui-pending .about p { visibility: hidden; }
+    .ui-stream .pui-bubble__stream-caret { background: currentColor; }
     .ui-photo-link { display: block; position: relative; width: fit-content; text-decoration: none; }
     .ui-photo-link:has(.ui-ascii) { margin-bottom: 1.5rem; }
     .ui-photo-link:has(.ui-ascii) .photo {
@@ -228,8 +251,39 @@
         <span>©<!-- year --> <a href="mailto:thekyria@gmail.com" title="Email thekyria@gmail.com">Theodoros Kyriakidis</a></span>
         <span><a href="https://github.com/thekyria/thekyria.github.io">Source</a></span>
         <!-- version -->
+        <span hidden><button class="theme-toggle" type="button"></button></span>
       </footer>
     </main>
   </div>
+  <script>
+    // Footer toggle between the light and dark themes; picking the system's own theme goes back to following the system
+    (() => {
+      const root = document.documentElement;
+      const system = matchMedia("(prefers-color-scheme: dark)");
+      const button = document.querySelector(".theme-toggle");
+      const current = () => root.dataset.theme || (system.matches ? "dark" : "light");
+      const label = () => {
+        const next = current() === "dark" ? "light" : "dark";
+        button.textContent = next === "dark" ? "Dark theme" : "Light theme";
+        button.title = `Switch to the ${next} theme`;
+      };
+      button.addEventListener("click", () => {
+        const next = current() === "dark" ? "light" : "dark";
+        try {
+          if ((next === "dark") === system.matches) {
+            delete root.dataset.theme;
+            localStorage.removeItem("theme");
+          } else {
+            root.dataset.theme = next;
+            localStorage.setItem("theme", next);
+          }
+        } catch {}
+        label();
+      });
+      system.addEventListener("change", label);
+      label();
+      button.parentElement.hidden = false;
+    })();
+  </script>
 </body>
 </html>
