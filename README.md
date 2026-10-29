@@ -10,7 +10,7 @@ The CV setup is based on <https://github.com/sinaatalay/rendercv-pipeline> (see 
 
 ## Dependencies
 
-The home page is plain HTML/CSS with vendored fonts. On top of it, `site/ui.js` adds a few decorative [performative-ui](https://github.com/vorpus/performativeUI) components (an aurora background, sparkles, an ASCII rendition of the photo and a streamed bio), loading React and the library from esm.sh and jsDelivr; without JavaScript, or with reduced motion, the page stays plain or holds still. The tech radar under `/radar/` is a JavaScript app: [Build Your Own Radar](https://github.com/thoughtworks/build-your-own-radar), built from source on every deploy by `.github/workflows/byor.yaml`. It loads fonts from Google Fonts and rsms.me; its analytics stay off, since no IDs are set at build time.
+The home page is plain HTML/CSS with vendored fonts. On top of it, `site/ui.js` adds a few decorative [performative-ui](https://github.com/vorpus/performativeUI) components (an aurora background, sparkles, an ASCII rendition of the photo and a streamed bio), loading React and the library from esm.sh and jsDelivr; without JavaScript, or with reduced motion, the page stays plain or holds still. A switch in the footer toggles between the light and dark themes; the choice is kept in the browser's `localStorage`, and without it the page follows the system setting. The tech radar under `/radar/` is a JavaScript app: [Build Your Own Radar](https://github.com/thoughtworks/build-your-own-radar), built from source on every deploy by `.github/workflows/byor.yaml`. It loads fonts from Google Fonts and rsms.me; its analytics stay off, since no IDs are set at build time.
 
 | Dependency | Version | Scope | Declared in |
 | --- | --- | --- | --- |
