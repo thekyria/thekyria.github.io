@@ -1,32 +1,26 @@
-// Prototype: performative-ui (https://github.com/vorpus/performativeUI, MIT) islands on the static page.
+// performative-ui (https://github.com/vorpus/performativeUI, MIT) islands on the static page.
 // React and the library load from esm.sh (see the import map in index.html); the page works without them.
-// Two tones for comparison, picked with ?tone=ironic or ?tone=visual (the default).
-import { createElement as h, useEffect, useRef, useState } from "react";
+import { createElement as h, useEffect, useState } from "react";
 import { createRoot } from "react-dom/client";
 import { Aurora, FloatingSparkles, TokenStream } from "performative-ui";
 
-const tone = new URLSearchParams(location.search).get("tone") === "ironic" ? "ironic" : "visual";
 const still = matchMedia("(prefers-reduced-motion: reduce)").matches;
-document.documentElement.dataset.tone = tone;
 
 const island = (host, element) => createRoot(host).render(element);
 const layer = (parent, className) => parent.appendChild(Object.assign(document.createElement("div"), { className }));
 
-// Aurora behind the main column, in the theworks blues or in full AI-startup colours
-const blobs = {
-    visual: [
-        { color: "rgba(16, 52, 166, 0.35)", x: 15, y: 20, size: 55 },
-        { color: "rgba(157, 180, 255, 0.35)", x: 85, y: 35, size: 50 },
-        { color: "rgba(16, 52, 166, 0.2)", x: 50, y: 90, size: 60 },
-    ],
-    ironic: undefined, // the library's own violet / pink / cyan
-};
-island(layer(document.querySelector("main"), "ui-aurora"), h(Aurora, { blobs: blobs[tone], static: still }));
+// Aurora behind the main column, in the theworks blues
+const blobs = [
+    { color: "rgba(16, 52, 166, 0.35)", x: 15, y: 20, size: 55 },
+    { color: "rgba(157, 180, 255, 0.35)", x: 85, y: 35, size: 50 },
+    { color: "rgba(16, 52, 166, 0.2)", x: 50, y: 90, size: 60 },
+];
+island(layer(document.querySelector("main"), "ui-aurora"), h(Aurora, { blobs, static: still }));
 
-// Sparkles drifting up the side panel
+// A few faint sparkles drifting up the side panel
 if (!still) {
     island(layer(document.querySelector(".panel"), "ui-sparkles"),
-        h(FloatingSparkles, tone === "ironic" ? { count: 24 } : { count: 10, glyphs: ["✦", "·"], sizeRange: [6, 12] }));
+        h(FloatingSparkles, { count: 10, glyphs: ["✦", "·"], sizeRange: [6, 12] }));
 }
 
 // ASCII rendition of the photo; hovering or focusing the link shows the photo again
@@ -34,7 +28,6 @@ const RAMP = " .:-=+*#%@"; // sparsest to densest, light ink on the blue panel
 
 function AsciiPortrait({ src, cols }) {
     const [lines, setLines] = useState(null);
-    const [shown, setShown] = useState(0);
     useEffect(() => {
         const img = new Image();
         img.onload = () => {
@@ -58,21 +51,11 @@ function AsciiPortrait({ src, cols }) {
                 out.push(line);
             }
             setLines(out);
-            setShown(still || tone === "visual" ? out.length : 0);
         };
         img.src = src;
     }, [src, cols]);
-    // Ironic: the portrait "generates" line by line, like a diffusion progress bar
-    useEffect(() => {
-        if (!lines || shown >= lines.length) return;
-        const t = setTimeout(() => setShown(shown + 1), 35);
-        return () => clearTimeout(t);
-    }, [lines, shown]);
     if (!lines) return null;
-    // Ironic: each row tinted along the library's violet, pink, cyan gradient
-    const tint = (y) => (tone === "ironic" ? { color: `hsl(${270 + (y / lines.length) * 120} 85% 70%)` } : null);
-    return h("pre", { className: "ui-ascii", "aria-hidden": "true", style: { "--cols": cols } },
-        lines.map((line, y) => h("span", { key: y, style: tint(y) }, (y < shown ? line : " ".repeat(cols)) + "\n")));
+    return h("pre", { className: "ui-ascii", "aria-hidden": "true", style: { "--cols": cols } }, lines.join("\n"));
 }
 
 const photo = document.querySelector(".photo");
@@ -84,14 +67,6 @@ island(portrait, h(AsciiPortrait, { src: photo.src, cols: 56 }));
 // The bio streams in token by token. Screen readers get the real paragraph throughout,
 // and once the stream completes the real paragraph, with its links, takes its place.
 const bio = document.querySelector(".about p");
-if (tone === "ironic") {
-    const prompt = Object.assign(document.createElement("div"), { className: "ui-prompt" });
-    prompt.setAttribute("aria-hidden", "true");
-    prompt.append(
-        Object.assign(document.createElement("p"), { textContent: "› Who is Theodoros Kyriakidis? Be concise." }),
-        Object.assign(document.createElement("p"), { className: "ui-thinking", textContent: "✦ Thought for 11 years" }));
-    bio.before(prompt);
-}
 if (!still) {
     const stream = Object.assign(document.createElement("div"), { className: "ui-stream" });
     stream.setAttribute("aria-hidden", "true");
@@ -99,10 +74,5 @@ if (!still) {
     bio.classList.add("ui-sr-only");
     const done = () => { stream.remove(); bio.classList.remove("ui-sr-only"); };
     const text = bio.textContent.replace(/\s+/g, " ").trim();
-    island(stream, h("p", null, h(TokenStream, {
-        text,
-        speedMs: tone === "ironic" ? [30, 90] : [8, 25],
-        hideCaret: tone === "visual",
-        onComplete: () => setTimeout(done, tone === "ironic" ? 1200 : 0),
-    })));
+    island(stream, h("p", null, h(TokenStream, { text, speedMs: [8, 25], hideCaret: true, onComplete: done })));
 }
