@@ -77,6 +77,6 @@ if (root.classList.contains("ui-pending")) {
     bio.classList.add("ui-sr-only");
     const done = () => { stream.remove(); bio.classList.remove("ui-sr-only"); };
     const text = bio.textContent.replace(/\s+/g, " ").trim();
-    island(stream, h("p", null, h(TokenStream, { text, speedMs: [10, 20], onComplete: done })));
+    island(stream, h("p", null, h(TokenStream, { text, speedMs: [4, 10], onComplete: done })));
     root.classList.remove("ui-pending");
 }
