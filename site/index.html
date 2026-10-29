@@ -93,9 +93,9 @@
       --panel: #1034a6;
       --panel-ink: #f0ffff;
       --panel-rule: rgba(240, 255, 255, 0.3);
-      --aurora-1: light-dark(rgba(16, 52, 166, 0.45), rgba(90, 130, 255, 0.7));
-      --aurora-2: light-dark(rgba(110, 150, 255, 0.55), rgba(157, 180, 255, 0.5));
-      --aurora-3: light-dark(rgba(16, 52, 166, 0.3), rgba(70, 110, 240, 0.65));
+      --aurora-1: light-dark(rgba(16, 52, 166, 0.3), rgba(90, 130, 255, 0.45));
+      --aurora-2: light-dark(rgba(110, 150, 255, 0.35), rgba(157, 180, 255, 0.3));
+      --aurora-3: light-dark(rgba(16, 52, 166, 0.2), rgba(70, 110, 240, 0.4));
     }
     :root[data-theme="light"] { color-scheme: light; }
     :root[data-theme="dark"] { color-scheme: dark; }
@@ -212,7 +212,7 @@
     .panel, main { position: relative; isolation: isolate; overflow: hidden; }
     .ui-aurora, .ui-sparkles { position: absolute; inset: 0; z-index: -1; overflow: hidden; pointer-events: none; }
     .ui-sparkles { z-index: 0; }
-    .ui-sparkles .pui-sparkle-field__item { color: rgba(240, 255, 255, 0.9); text-shadow: 0 0 8px rgba(157, 180, 255, 0.9); }
+    .ui-sparkles .pui-sparkle-field__item { color: rgba(240, 255, 255, 0.6); text-shadow: 0 0 6px rgba(157, 180, 255, 0.5); }
     .ui-pending .about p { visibility: hidden; }
     .ui-stream .pui-bubble__stream-caret { background: currentColor; }
     .ui-photo-link { display: block; position: relative; width: fit-content; text-decoration: none; }
