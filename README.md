@@ -10,7 +10,7 @@ The CV setup is based on <https://github.com/sinaatalay/rendercv-pipeline> (see 
 
 ## Dependencies
 
-The home page is plain HTML/CSS with no scripts, frameworks or CDN assets; its fonts are vendored. The tech radar under `/radar/` is a JavaScript app: [Build Your Own Radar](https://github.com/thoughtworks/build-your-own-radar), built from source on every deploy by `.github/workflows/byor.yaml`. It loads fonts from Google Fonts and rsms.me; its analytics stay off, since no IDs are set at build time.
+The home page is plain HTML/CSS with vendored fonts. On top of it, `site/ui.js` adds a few decorative [performative-ui](https://github.com/vorpus/performativeUI) components (an aurora background, sparkles, an ASCII rendition of the photo and a streamed bio), loading React and the library from esm.sh and jsDelivr; without JavaScript, or with reduced motion, the page stays plain or holds still. The tech radar under `/radar/` is a JavaScript app: [Build Your Own Radar](https://github.com/thoughtworks/build-your-own-radar), built from source on every deploy by `.github/workflows/byor.yaml`. It loads fonts from Google Fonts and rsms.me; its analytics stay off, since no IDs are set at build time.
 
 | Dependency | Version | Scope | Declared in |
 | --- | --- | --- | --- |
@@ -20,8 +20,10 @@ The home page is plain HTML/CSS with no scripts, frameworks or CDN assets; its f
 | Node.js | BYOR's `.nvmrc` | Build only (BYOR) | BYOR's `.nvmrc` |
 | [GFS Didot](https://www.greekfontsociety-gfs.gr/) font | — | Site, vendored | `site/fonts/` (`OFL.txt`) |
 | [Simple Icons](https://simpleicons.org) brand icons | 13.21.0 | Site, inlined SVG | `site/index.html` |
+| [performative-ui](https://github.com/vorpus/performativeUI) (MIT) | 0.7.0 | Site, from esm.sh / jsDelivr | import map and stylesheet link in `site/index.html` |
+| [React](https://react.dev) and React DOM (MIT) | 19.2.0 | Site, from esm.sh | import map in `site/index.html` |
 
-GitHub Actions used by the workflows are kept up to date by Dependabot (`.github/dependabot.yml`), as is `cv/requirements.txt`. BYOR is pinned to a commit and bumped by hand: set `BYOR_REF` to the commit of a newer [release](https://github.com/thoughtworks/build-your-own-radar/releases) and check that the two source patches in `byor.yaml` still apply (the workflow fails if they don't).
+GitHub Actions used by the workflows are kept up to date by Dependabot (`.github/dependabot.yml`), as is `cv/requirements.txt`. performative-ui and React are pinned in the import map of `site/index.html` and bumped by hand. BYOR is pinned to a commit and bumped by hand: set `BYOR_REF` to the commit of a newer [release](https://github.com/thoughtworks/build-your-own-radar/releases) and check that the two source patches in `byor.yaml` still apply (the workflow fails if they don't).
 
 ## Subprojects
 

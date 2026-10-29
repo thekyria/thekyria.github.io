@@ -51,6 +51,20 @@
     ]
   }
   </script>
+  <!-- performative-ui islands, see ui.js -->
+  <script type="importmap">
+  {
+    "imports": {
+      "react": "https://esm.sh/react@19.2.0",
+      "react/jsx-runtime": "https://esm.sh/react@19.2.0/jsx-runtime",
+      "react-dom": "https://esm.sh/react-dom@19.2.0?external=react",
+      "react-dom/client": "https://esm.sh/react-dom@19.2.0/client?external=react",
+      "performative-ui": "https://esm.sh/performative-ui@0.7.0?external=react,react-dom"
+    }
+  }
+  </script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/performative-ui@0.7.0/dist/performative-ui.css">
+  <script type="module" src="ui.js"></script>
   <style>
     /* GFS Didot, Greek Font Society, SIL Open Font License 1.1 (fonts/OFL.txt) */
     @font-face { font-family: "GFS Didot"; src: url(fonts/GFSDidot-Regular.otf) format("opentype"); font-weight: 400; font-style: normal; font-display: swap; }
@@ -148,6 +162,32 @@
     }
     footer > :not(:first-child)::before { content: "•" / ""; margin-right: 0.5rem; }
     .commit { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+    /* performative-ui islands, see ui.js */
+    .panel, main { position: relative; isolation: isolate; overflow: hidden; }
+    .ui-aurora, .ui-sparkles { position: absolute; inset: 0; z-index: -1; overflow: hidden; pointer-events: none; }
+    .ui-sparkles { z-index: 0; }
+    .ui-photo-link { display: block; position: relative; width: fit-content; text-decoration: none; }
+    .ui-photo-link:has(.ui-ascii) { margin-bottom: 1.5rem; }
+    .ui-photo-link:has(.ui-ascii) .photo {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      object-fit: cover;
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+    .ui-photo-link:hover .photo, .ui-photo-link:focus-visible .photo { opacity: 1; }
+    .ui-ascii {
+      width: 15rem;
+      height: 15rem;
+      margin: 0;
+      overflow: hidden;
+      font: calc(15rem / (var(--cols) * 0.6)) / 1.2 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      color: var(--panel-ink);
+    }
+    .ui-sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
   </style>
 </head>
 <body>
