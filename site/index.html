@@ -165,6 +165,7 @@
     footer {
       display: flex;
       flex-wrap: wrap;
+      align-items: center;
       gap: 0.25rem 0.5rem;
       padding-top: 1rem;
       border-top: 1px solid var(--rule);
@@ -172,16 +173,41 @@
     }
     footer > :not(:first-child)::before { content: "•" / ""; margin-right: 0.5rem; }
     .commit { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+    /* Theme switch: the knob shows the current theme (sun or moon) and slides right for dark */
+    footer > .theme { margin-left: auto; }
+    footer > .theme::before { content: none; }
     .theme-toggle {
+      display: block;
+      position: relative;
+      width: 3.25rem;
+      height: 1.75rem;
       padding: 0;
-      border: 0;
-      background: none;
-      color: var(--link);
-      font: inherit;
-      text-decoration: underline;
+      border: 1px solid var(--rule);
+      border-radius: 999px;
+      background: light-dark(rgba(16, 52, 166, 0.08), rgba(240, 255, 255, 0.08));
       cursor: pointer;
     }
-    .theme-toggle:hover { color: var(--link-hover); }
+    .theme-toggle:hover { border-color: var(--link); }
+    .theme-toggle:focus-visible { outline: 2px solid var(--link); outline-offset: 2px; }
+    .theme-toggle .knob {
+      position: absolute;
+      top: 0.1875rem;
+      left: 0.1875rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 1.3125rem;
+      height: 1.3125rem;
+      border-radius: 50%;
+      background: var(--ink);
+      color: var(--page);
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+      transition: transform 0.25s ease;
+    }
+    .theme-toggle[aria-checked="true"] .knob { transform: translateX(1.5rem); }
+    .theme-toggle svg { width: 0.875rem; height: 0.875rem; fill: currentColor; }
+    .theme-toggle[aria-checked="true"] .sun, .theme-toggle[aria-checked="false"] .moon { display: none; }
+    @media (prefers-reduced-motion: reduce) { .theme-toggle .knob { transition: none; } }
     /* performative-ui islands, see ui.js */
     .panel, main { position: relative; isolation: isolate; overflow: hidden; }
     .ui-aurora, .ui-sparkles { position: absolute; inset: 0; z-index: -1; overflow: hidden; pointer-events: none; }
@@ -251,7 +277,14 @@
         <span>©<!-- year --> <a href="mailto:thekyria@gmail.com" title="Email thekyria@gmail.com">Theodoros Kyriakidis</a></span>
         <span><a href="https://github.com/thekyria/thekyria.github.io">Source</a></span>
         <!-- version -->
-        <span hidden><button class="theme-toggle" type="button"></button></span>
+        <span class="theme" hidden>
+          <button class="theme-toggle" type="button" role="switch" aria-checked="false" aria-label="Dark theme">
+            <span class="knob">
+              <svg class="sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="5"/><path d="M12 1.5v3M12 19.5v3M1.5 12h3M19.5 12h3M4.6 4.6l2.1 2.1M17.3 17.3l2.1 2.1M4.6 19.4l2.1-2.1M17.3 6.7l2.1-2.1" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+              <svg class="moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 14.6A9 9 0 0 1 9.4 3a9 9 0 1 0 11.6 11.6z"/></svg>
+            </span>
+          </button>
+        </span>
       </footer>
     </main>
   </div>
@@ -263,9 +296,9 @@
       const button = document.querySelector(".theme-toggle");
       const current = () => root.dataset.theme || (system.matches ? "dark" : "light");
       const label = () => {
-        const next = current() === "dark" ? "light" : "dark";
-        button.textContent = next === "dark" ? "Dark theme" : "Light theme";
-        button.title = `Switch to the ${next} theme`;
+        const dark = current() === "dark";
+        button.setAttribute("aria-checked", dark);
+        button.title = `Switch to the ${dark ? "light" : "dark"} theme`;
       };
       button.addEventListener("click", () => {
         const next = current() === "dark" ? "light" : "dark";
