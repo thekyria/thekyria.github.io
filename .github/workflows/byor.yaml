@@ -22,7 +22,7 @@ jobs:
           repository: thoughtworks/build-your-own-radar
           ref: ${{ env.BYOR_REF }}
           path: build/byor
-      - uses: actions/setup-node@v6
+      - uses: actions/setup-node@v7
         with:
           node-version-file: build/byor/.nvmrc
           cache: npm
