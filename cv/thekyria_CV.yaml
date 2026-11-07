@@ -1,5 +1,6 @@
 cv:
   name: Theodoros Kyriakidis
+  headline: Head of Embedded Software and QA | PhD in Electrical Engineering (EPFL)
   location: Thessaloniki, GR | Lucerne, CH
   email: thekyria@gmail.com
   phone: tel:+30-6978175508
@@ -12,6 +13,8 @@ cv:
     - network: Google Scholar
       username: k05LbAMAAAAJ
   sections:
+    Summary:
+      - Engineering leader with 15+ years across research and industry, from mixed-signal computer architectures for the smart grid (PhD, EPFL), to test automation for enterprise networking at Cisco, to building and leading embedded software and QA teams for the water industry at GWF.
     experience:
       - company: GWF
         position: Head of Embedded Software and QA
@@ -29,7 +32,7 @@ cv:
         start_date: 2017-01
         end_date: 2020-08
         highlights:
-          - In the team that launched [Catalyst 9300 Series Switch](https://www.cisco.com/site/us/en/products/networking/switches/catalyst-9300-series-switches/index.html), [Catalyst 9800 Series Wireless Controller](https://www.cisco.com/site/us/en/products/networking/wireless/wireless-lan-controllers/catalyst-9800-series/index.html), [Embedded Wireless Controller](https://www.cisco.com/site/us/en/products/networking/wireless/access-points/catalyst-9100-series/index.html).
+          - Part of the team that launched [Catalyst 9300 Series Switch](https://www.cisco.com/site/us/en/products/networking/switches/catalyst-9300-series-switches/index.html), [Catalyst 9800 Series Wireless Controller](https://www.cisco.com/site/us/en/products/networking/wireless/wireless-lan-controllers/catalyst-9800-series/index.html), [Embedded Wireless Controller](https://www.cisco.com/site/us/en/products/networking/wireless/access-points/catalyst-9100-series/index.html).
           - Led automated multi-phase testing, CI QA, pre-commit sanities, feature testing, regression.
           - Deep understanding of wireless/non-wireless deployment, configuration, troubleshooting; 3rd level support for key customers.
     education:
@@ -67,6 +70,11 @@ cv:
         details: ACM, IEEE (incl. Smart Grid Technical Community, Power & Energy Society), PMI, Technical Chamber of Greece
       - label: Extra-curricular
         details: Sports (football, basketball, running), Music (piano, greek, vocal), Literature, Motorboats, Sailing, Wine (WSET Level 3)
+    Selected Publications:
+      - bullet: 'L. Fabre, G. Lanz, **T. Kyriakidis**, et al., "An ultra-high speed emulator dedicated to power system dynamics computation based on a mixed-signal hardware platform", *IEEE Transactions on Power Systems*, 2013.'
+      - bullet: '**T. Kyriakidis**, G. Lanz, D. Sallin, et al., "A mixed-platform framework for dynamic stability assessment", *IEEE PES General Meeting*, 2013.'
+      - bullet: '**T. Kyriakidis**, G. Lanz, R. Cherkaoui, M. Kayal, "A transient stability assessment method using post-fault trajectories", *IEEE Grenoble Conference*, 2013.'
+      - bullet: 15+ journal and conference papers in total; full list on [Google Scholar](https://scholar.google.com/citations?user=k05LbAMAAAAJ).
 design:
   theme: engineeringresumes
 
