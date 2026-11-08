@@ -1,5 +1,6 @@
 cv:
   name: Theodoros Kyriakidis
+  headline: Head of Embedded Software and QA | PhD in Electrical Engineering (EPFL)
   location: Thessaloniki, GR | Lucerne, CH
   email: thekyria@gmail.com
   phone: tel:+30-6978175508
@@ -12,26 +13,44 @@ cv:
     - network: Google Scholar
       username: k05LbAMAAAAJ
   sections:
+    Summary:
+      - Engineering leader with 15+ years across research and industry, from mixed-signal computer architectures for the smart grid (PhD, EPFL), to test automation for enterprise networking at Cisco, to growing from QA manager to head of embedded software and QA for the water industry at GWF. ISTQB-certified in Test Management.
     experience:
       - company: GWF
         position: Head of Embedded Software and QA
         location: Thessaloniki, GR | Lucerne, CH
-        start_date: 2020-08
+        start_date: 2023-09
         end_date: present
         highlights:
+          - Leading a cross-site team that develops the embedded software of new-generation water meters and communication devices, and a team that assures quality across the company's products.
           - Contributed to steady double-digit growth for the last 5 years, by leading an international team of 20+ Engineers across 3 sites.
-          - Launched flagship products [Sonico Edge](https://productfinder.gwf.ch/en/sonico-edge-2) and [Sonico Nano](https://productfinder.gwf.ch/en/sonico-nano).
           - Bootstrapped a separate Development Testing team to improve quality across product lines.
+      - company: GWF
+        position: QA Manager → Embedded Systems Manager
+        location: Thessaloniki, GR
+        start_date: 2020-08
+        end_date: 2023-09
+        highlights:
           - Created an Embedded Development and QA [Department](https://maps.app.goo.gl/DnQaTXWKxJURBjJr5) in Thessaloniki, Greece.
+          - Launched flagship products [Sonico Edge](https://productfinder.gwf.ch/en/sonico-edge-2) and [Sonico Nano](https://productfinder.gwf.ch/en/sonico-nano).
       - company: Cisco
         position: Test Engineer
         location: Lausanne, CH
         start_date: 2017-01
         end_date: 2020-08
         highlights:
-          - In the team that launched [Catalyst 9300 Series Switch](https://www.cisco.com/site/us/en/products/networking/switches/catalyst-9300-series-switches/index.html), [Catalyst 9800 Series Wireless Controller](https://www.cisco.com/site/us/en/products/networking/wireless/wireless-lan-controllers/catalyst-9800-series/index.html), [Embedded Wireless Controller](https://www.cisco.com/site/us/en/products/networking/wireless/access-points/catalyst-9100-series/index.html).
-          - Led automated multi-phase testing, CI QA, pre-commit sanities, feature testing, regression.
+          - Ensured the quality of wireless solutions on the network operating system of Cisco routers, switches and wireless controllers.
+          - Part of the team that launched [Catalyst 9300 Series Switch](https://www.cisco.com/site/us/en/products/networking/switches/catalyst-9300-series-switches/index.html), [Catalyst 9800 Series Wireless Controller](https://www.cisco.com/site/us/en/products/networking/wireless/wireless-lan-controllers/catalyst-9800-series/index.html), [Embedded Wireless Controller](https://www.cisco.com/site/us/en/products/networking/wireless/access-points/catalyst-9100-series/index.html).
+          - 'Led fully automated, continuously integrated, multi-phase testing: pre-commit sanities, feature testing, regression.'
+          - Treated test infrastructure as a product, with versioning, peer review and QA-of-QA.
           - Deep understanding of wireless/non-wireless deployment, configuration, troubleshooting; 3rd level support for key customers.
+      - company: Hellenic Navy
+        position: Electronic Systems Engineer
+        location: Thessaloniki, GR
+        start_date: 2015-11
+        end_date: 2016-11
+        highlights:
+          - Military service. Monitored HF and VHF antenna arrays at the Angelochori Transmission Center, Headquarters Command of Eastern Mediterranean.
     education:
       - institution: EPFL
         area: Electrical Engineering
@@ -40,9 +59,9 @@ cv:
         end_date: 2015
         highlights:
           - '[Explored](https://infoscience.epfl.ch/entities/person/6781c7bb-13b0-4a5b-a9d5-6de6ee115357) linear algebra capabilities of analog electronic computing machines.'
-          - Combined analog and digital resources (fixed and synthesized) into computational accelerator architectures for modern power systems and the smart grid.
+          - Combined analog and digital resources (fixed and synthesized) into computational accelerator architectures for modern power systems and the smart grid, with hardware/software co-design to attach them to conventional host computers.
+          - SNSF Doc.Mobility fellowship for a 6-month research visit at the Université de Liège (Montefiore Institute), 2014–2015.
           - IEEE EPFL Student branch
-          - Fellowship by the SNSF
       - institution: Aristotle University of Thessaloniki (AUTh)
         area: Electrical Engineering
         degree: MSc
@@ -52,6 +71,7 @@ cv:
           - Specialization in Electronics and Computer Science
           - '[Thesis](https://ikee.lib.auth.gr/record/290616?ln=en): GyroScanField Electromagnetic Field Measuring Instrument with Real-Time Visualization'
           - Multiple scholarships by the National Scholarship Foundation (IKY)
+          - Part-time network engineer (NOC) and software developer at the university.
     Skills and Qualifications:
       - label: Management
         details: Leadership, Organizational Development, Change Management, Project Management
@@ -61,12 +81,19 @@ cv:
         details: Water Industry, (Wireless) Network Engineering, Power Systems & Smart Grid, Numerical Analysis & Simulations
       - label: Quality Assurance
         details: DevOps, HIL testing, CI/CD, automated functional and non-functional testing, static & dynamic analysis, pipelines
+      - label: Certifications
+        details: ISTQB Certified Tester - Test Management, Cisco Security Green Belt, Advanced Learning Algorithms, WSET Level 3 (wine)
       - label: Languages
         details: Greek (native), English (prof.), French (prof.), German (bas.), Italian (bas.), Spanish (bas.)
       - label: Memberships
         details: ACM, IEEE (incl. Smart Grid Technical Community, Power & Energy Society), PMI, Technical Chamber of Greece
       - label: Extra-curricular
-        details: Sports (football, basketball, running), Music (piano, greek, vocal), Literature, Motorboats, Sailing, Wine (WSET Level 3)
+        details: Sports (football, basketball, running), Music (piano, greek, vocal), Literature, Motorboats (licensed), Sailing, Wine
+    Selected Publications:
+      - bullet: 'L. Fabre, G. Lanz, **T. Kyriakidis**, et al., "An ultra-high speed emulator dedicated to power system dynamics computation based on a mixed-signal hardware platform", *IEEE Transactions on Power Systems*, 2013.'
+      - bullet: '**T. Kyriakidis**, G. Lanz, D. Sallin, et al., "A mixed-platform framework for dynamic stability assessment", *IEEE PES General Meeting*, 2013.'
+      - bullet: '**T. Kyriakidis**, G. Lanz, R. Cherkaoui, M. Kayal, "A transient stability assessment method using post-fault trajectories", *IEEE Grenoble Conference*, 2013.'
+      - bullet: 15+ journal and conference papers in total, with a best paper and a best poster award; full list on [Google Scholar](https://scholar.google.com/citations?user=k05LbAMAAAAJ).
 design:
   theme: engineeringresumes
 
